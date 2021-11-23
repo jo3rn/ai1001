@@ -1229,7 +1229,7 @@ Das [Agile Manifesto](https://agilemanifesto.org) zielt nicht darauf ab, die Ele
   - "Schick mir das als Excel-Formular"
   - Meeting planen, wenn man auch schnell aushelfen kann
   - alle müssen zwischen 9 und 16 Uhr im Büro sein
-  - [Passierschein A38](https://www.youtu.be/8yrRVrADW-0&t=1m)
+  - [Passierschein A38](https://youtu.be/8yrRVrADW-0&t=1m)
 - Beharren auf Hierarchien
 - ungeeignete Metriken für Beurteilung des Outputs
 
