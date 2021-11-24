@@ -1179,12 +1179,21 @@ Agile Entwicklung
 - Kommunikation: kaum, nur in Silos
 - Plan: zu detailliert, nicht realistisch, unflexibel
 - Fristen: zu starr, nicht einhaltbar, strategisch/politisch festgesetzt
+- Software: erst nach langer Zeit einsatzbereit
+
+---
+
+![bg h:90%](./img/plan-vs-reality.svg)
+
+## <!-- _footer: '[Source](https://comic.browserling.com/extra/35)' -->
 
 ---
 
 ### Agile Werte
 
-Agilität ist eine Reihe von Werten und Prinzipien, die eine Gruppe von Software-Entwicklern als [Agile Manifesto](https://agilemanifesto.org) und [12 Principles](https://agilemanifesto.org/principles.html) zusammengefasst hat.
+Agilität ist eine Reihe von Werten und Prinzipien, die als [Agile Manifesto](https://agilemanifesto.org) und [12 Principles](https://agilemanifesto.org/principles.html) zusammengefasst sind.
+
+Laut der Verfasser verbessern diese Werte den Softwareentwicklungsprozess und die Kundenzufriedenheit.
 
 ---
 
