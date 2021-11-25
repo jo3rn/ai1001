@@ -1000,7 +1000,7 @@ Ihr könnt auch einen der vorgestellten Workflows modifizieren oder einen andere
 
 ## Woche 4
 
-![bg left:40% 80%](./img/git_head.webp)
+![bg left:40% 80%](./img/git_head.png)
 
 <!-- _backgroundColor: #f7eda8 -->
 
