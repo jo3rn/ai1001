@@ -1300,7 +1300,7 @@ As a _..._ I want _..._ so that _..._ (was soll erreicht werden?)
 
 ### Projekt: Feedback einholen (Product Owner)
 
-Auch ohne "Kunden" könnt ihr Feedback zu Euerm Programm einholen, z.B. indem Ihr es unbeteiligte Personen testen lasst:
+Auch ohne "Kunden" könnt ihr Feedback zu Eurem Programm einholen, z.B. indem Ihr es unbeteiligte Personen testen lasst:
 
 - versteht der User Zweck und Bedienung des Programms
 - treten unbedachte Grenzfälle/Fehler auf
