@@ -2017,7 +2017,7 @@ Setup your machine faster
 
 ## Woche 12
 
-![bg left:40% 80%](./img/issue_resolved.PNG)
+![bg left:40% 80%](./img/issue_resolved.png)
 
 <!-- _backgroundColor: #f7eda8 -->
 
