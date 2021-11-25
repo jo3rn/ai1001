@@ -617,7 +617,7 @@ Das zuvor erstellte **lokale** Repository verknüpfen wir nun mit dem **remote**
 Im Verzeichnis eures lokalen Repos:
 
 - `git remote add origin git@gitlab.cs.hs-fulda.de:fdNummer/lerntagebuch.git`
-  (`fdNummer` und Projektnamen enstprechend anpassen)
+  (`fdNummer` und Projektnamen entsprechend anpassen)
 - mit `git remote -v` prüfen, ob die `origin` gesetzt wurde
 - mit `git push -u origin --all` das Lerntagebuch zu GitLab laden
 
@@ -700,7 +700,7 @@ Ein Beispiel Lerntagebuch:
 1. > Git push wird dafür verwendet um die veränderten Dateien die sich im Staging befinden auf git hochzuladen.
 2. > Öffnen über Git durch ... vim Name.md
 3. > Der Befehl git diff zeigt [...] Änderungen zwischen dem Repository und dem Working Tree. Folglich wird das, was sich in dem Arbeitsverzeichnis befindet, mit dem, was sich in der Staging-Area befindet, verglichen.
-4. > md: Wechselt den Location, jenachdem was für Ordner/File man eingibt. Mit md .. geht man auf 1 Location zurück
+4. > md: Wechselt die Location, je nachdem was für Ordner/File man eingibt. Mit md .. geht man auf 1 Location zurück
 
 ---
 
@@ -1620,7 +1620,7 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
   - Weiterentwicklungen in eine Testumgebung bringen
   - Releases in eine Produktivumgebung bringen
 
-eine schnell und einfach durchzuführende Auslieferung führt zu:
+eine schnelle und einfach durchzuführende Auslieferung führt zu:
 
 - häufigeren Auslieferungen = höherer Kundenzufriedenheit
 - kleineren Releasepaketen = bessere Fehlereingrenzung
@@ -1629,7 +1629,7 @@ eine schnell und einfach durchzuführende Auslieferung führt zu:
 
 ### Continuous Deployment
 
-...passiert wenn Continuous Delivery ohne manuelles Zutun abläuft.
+...passiert, wenn Continuous Delivery ohne manuelles Zutun abläuft.
 
 ---
 
@@ -2036,3 +2036,4 @@ Wiederholung / Projekt
 Open Source
 
 <!-- _footer: '[Source](http://www.modernhumorist.com/mh/0004/propaganda/mp3.php)' -->
+
