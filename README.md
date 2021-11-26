@@ -8,3 +8,6 @@ Die Markdown-Datei [slides.md](slides.md) wird mit Hilfe von [Marp](https://marp
 
 Du hast einen Fehler entdeckt? Dir fällt eine sinnvolle Ergänzung ein? Erstelle einen Pull Request!
 
+## Git Cheat Sheet
+
+Das [Git Cheat Sheet](git_cheat_sheet.md) beinhaltet eine Kurzbeschreibung nützlicher Git-Befehle. Dein Lieblingsbefehl fehlt in der Liste? Erstelle einen Pull Request!
