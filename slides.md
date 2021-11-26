@@ -1607,10 +1607,27 @@ DevOps
 ---
 
 [10+ Deploys Per Day: Dev and Ops Cooperation at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4)
+(Erste Erwähnung von "Dev Ops")
 
-- manuelle Prozesse durch automatisierte Prozesse ersetzen
-- häufiger neue Versionen bereitstellen
-- alle Beteiligten könnten (theoretisch) die Software selbst zum Laufen bringen
+Gute Zusammenarbeit zwischen **Development** und **Operations** durch
+
+- automatisierte Infrastruktur (möglichst wenig manuelle Prozesse)
+- gemeinsame Versionskontrolle
+- Build in einem Schritt
+- Deploy/Release in einem Schritt
+- Feature Flags
+
+---
+
+### Kultur der Kollaboration
+
+- Vertrauen zwischen Development und Operations
+- keine Stereotypen unterstellen
+- keine Angst vor Veränderungen
+- Expertise öffentlich machen
+- Probleme und Fehler ohne Schuldzuweisung gemeinsam angehen
+- gemeinsame, sichtbare Metriken
+- Messaging Tools (Slack, MS Teams,...)
 
 ---
 
@@ -1620,25 +1637,49 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 
 - den Build-Prozess soweit wie möglich automatisieren
 - den Build soweit wie möglich automatisch testen lassen
+  - Tests müssen geschrieben werden
+  - Tests müssen auf einem Server ausgeführt werden
+
+---
+
+#### Continuous Integration: Vorteile
+
+- ersichtlich, ob sich Änderungen nahtlos in Bestehendes integrieren
+  - Releases erfordern keinen großen Aufwand
+- sofortige Warnung wenn der Build fehlschlägt
+  - Entwickler\*innen können sich drum kümmern, wenn das Wissen um die Änderung noch "frisch" ist
+  - weniger Bugs in der Produktiv-Version
+- QA-Team wird weniger mit "kleinen" Fehlern aufgehalten
 
 ---
 
 ### Continuous Delivery
 
 - den Auslieferungs-Prozess soweit wie möglich automatisieren
+  (mit Klick auf einen Button)
   - Weiterentwicklungen in eine Testumgebung bringen
   - Releases in eine Produktivumgebung bringen
+  - User sieht nur fertig entwickelte Features
 
-eine schnell und einfach durchzuführende Auslieferung führt zu:
+---
 
-- häufigeren Auslieferungen = höherer Kundenzufriedenheit
-- kleineren Releasepaketen = bessere Fehlereingrenzung
+#### Continuous Delivery: Vorteile
+
+- häufigere Auslieferung
+  - höhere Kundenzufriedenheit
+  - schnelleres Feedback
+- kleinere Releasepakete
+  - bessere Fehlereingrenzung
+  - geringere Komplexität
+- alle Beteiligten können (theoretisch) die Software selbst zum Laufen bringen
 
 ---
 
 ### Continuous Deployment
 
 ...passiert wenn Continuous Delivery ohne manuelles Zutun abläuft.
+
+Features sollten remote an-/ausschaltbar sein.
 
 ---
 
@@ -1680,6 +1721,18 @@ eine schnell und einfach durchzuführende Auslieferung führt zu:
 - Linter soll mind. vor Merge auf Haupt-Branch laufen, besser noch: bei jedem Commit
 
 (evtl. veraltete) Videos zur Einrichtung aus letztem Jahr: [1](https://www.youtube.com/watch?v=NgLL0B9rZLk) & [2](https://www.youtube.com/watch?v=w3gDzgTuVcs)
+
+---
+
+### DevOps: sonstige Ressourcen
+
+<!-- _backgroundColor: lightblue -->
+
+<https://www.oreilly.com/library/view/the-phoenix-project/9781457191350/>
+Buch: The Phoenix Project (Gene Kim, Kevin Behr, George Spafford)
+
+<https://www.atlassian.com/devops>
+DevOps Übersicht (Firma Atlassian bietet DevOps-Tools an)
 
 ---
 
