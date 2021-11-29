@@ -1481,6 +1481,22 @@ eine (mögliche) praktische Ausprägung von Agilität
 
 ---
 
+<!-- _backgroundColor: #c2f5a6 -->
+
+![bg right:40% 70%](./img/product_backlog.png)
+
+##### Projekt: Product Backlog
+
+- Verantwortung: Product Owner
+- Spalte im [GitHub Project Board](https://docs.github.com/en/issues/organizing-your-work-with-project-boards)
+- User Stories beschreiben den gewünschten Zustand der Software
+- zur Präsentation sollten noch User Stories offen sein (= mehr planen als implementiert werden kann)
+- PO & Devs leiten anhand der User Stories konkrete Aufgaben ab (dokumentiert z.B. als Issues)
+
+<!-- _footer: '(unvollständiges) Product Backlog für das Spiel Space Invaders' -->
+
+---
+
 #### Scrum Event: Sprint
 
 - ein Zeitraum mit fester Länge (i.d.R. 2-4 Wochen), in dem die anderen Events stattfinden
@@ -1528,6 +1544,16 @@ Teilnehmende: Scrum Team + wer sonst Input liefern kann
 
 ---
 
+<!-- _backgroundColor: #c2f5a6 -->
+
+![bg contain 63%](./img/sprint_backlog.png)
+
+##### Projekt: Sprint Backlog (Developer)
+
+<!-- _footer: '(unvollständiges) Sprint Backlog für das Spiel Space Invaders' -->
+
+---
+
 #### Scrum Event: Daily Scrum
 
 Timebox: max. 15min
@@ -1565,6 +1591,20 @@ Teilnehmende: Scrum Team
 - Was lief im letzten Sprint gut?
 - Gab es Probleme und wie könnte man sie lösen / wurden sie gelöst?
 - umsetzbare Erkenntnisse können ins Sprint Backlog des nächsten Sprints übernommen werden
+
+---
+
+<!-- _backgroundColor: #c2f5a6 -->
+
+##### Projekt: 2 Retrospektiven durchführen
+
+- Organisation & Durchführung durch Scrum Master
+- [ein Beispiel wie eine Retro ablaufen kann](https://www.atlassian.com/team-playbook/plays/retrospective)
+- jede Retro durch mind. eine kurze Übung oder ein Spiel anreichern (Anregungen online, z.B. [hier](https://www.komplexitaeter.de/inspiration/online-retro-scrum-teams/) und [hier](https://geekbot.com/blog/10-retrospective-games-ideas-to-keep-your-retros-fun-engaging-and-productive/))
+- kurzes Protokoll umfasst:
+  - angesprochene Probleme / Erfolge
+  - durchgeführte Übung(en) (Ablauf & Ergebnis)
+  - abgeleitete Änderungen / Aufgaben
 
 ---
 
