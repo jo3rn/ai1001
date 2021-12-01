@@ -1387,6 +1387,14 @@ Scrum
 
 ---
 
+### Lerntagebücher: Diskussion (Woche 6)
+
+<!-- _backgroundColor: #c2f5a6 -->
+
+1. > User Story: (…) eine art "Geschichte des Benutzers" wobei der Benutzer verschiedene Rollen einnehmen kann (der Benutzer kan auch der Product Owner(Scrum) sein.)
+
+---
+
 ## Scrum
 
 eine (mögliche) praktische Ausprägung von Agilität
@@ -1499,7 +1507,7 @@ eine (mögliche) praktische Ausprägung von Agilität
 
 #### Scrum Event: Sprint
 
-- ein Zeitraum mit fester Länge (i.d.R. 2-4 Wochen), in dem die anderen Events stattfinden
+- ein Zeitraum mit fester Länge (i.d.R. 2-4 Wochen), in dem die anderen Scrum Events stattfinden
 - Team verpflichtet sich auf ein konkretes Ziel
 - am Ende entsteht mind. eine Produktverbesserung ("Increment")
 
@@ -1511,7 +1519,7 @@ eine (mögliche) praktische Ausprägung von Agilität
 - fertig, nutzbar und wertvoll
 - befolgt die "Definition of Done"
   - formale Beschreibung aller erforderlichen Qualitätsmerkmale, z.B. Styleguide eingehalten, alle Tests bestanden, Dokumentation vorhanden, von Fachleuten begutachtet
-  - wird vom Scrum Team oder der Organisation festgelegt
+  - DoD wird vom Scrum Team oder der Organisation festgelegt
 
 ---
 
@@ -1538,7 +1546,7 @@ Teilnehmende: Scrum Team + wer sonst Input liefern kann
 - enthält
   - das Sprint-Ziel
   - die ausgewählten Einträge des Product Backlogs
-  - die abgeleiteten Aufgaben
+  - weitere abgeleitete Aufgaben
 - sollte während des Sprints nur im Ausnahmefall verändert werden
 - wird nach jedem Sprint gelöscht/zurückgesetzt
 
