@@ -10,6 +10,7 @@ Alle wichtigen Kommandos auf einen Blick!
 
 * `git log` zeigt das Commit-Log [Link](https://git-scm.com/docs/git-log)
 * `git log -<number>` zeigt das Log der letzten `<number>` Commits 
+* `git status` zeigt den Status des Working Trees an
 
 ## Branches
 
