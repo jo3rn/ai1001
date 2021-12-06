@@ -1684,9 +1684,33 @@ Gute Zusammenarbeit zwischen **Development** und **Operations** durch
 Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 
 - den Build-Prozess soweit wie möglich automatisieren
+  - statische Code-Analyse
+  - Kompilieren
+  - deploybare Artefakte erzeugen
 - den Build soweit wie möglich automatisch testen lassen
   - Tests müssen geschrieben werden
-  - Tests müssen auf einem Server ausgeführt werden
+  - Tests müssen auf einem CI-Server ausgeführt werden
+
+---
+
+#### CI-Ergebnis sichtbar machen
+
+= Verfall schnell bemerken und früh stoppen
+
+![w:900](img/ci_dashboard.png)
+![bg right:30% 50%](img/lava_green.png)
+
+<!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:ContinuousIntegration.png)' -->
+
+---
+
+#### Wenn CI fehlt
+
+![bg right](./img/A380_wires.jpg)
+
+> Airbus engineers in Germany (...) were using (...) computer-aided design software-version 4. Engineers in Toulouse (...) were using a newer version of the software (...) Those errors are going to cost Airbus **billions**.
+
+<!-- _footer: '[Source 1](https://www.baselinemag.com/c/a/Projects-Processes/PLM-Boeings-Dream-Airbus-Nightmare/1) [Source 2](https://commons.wikimedia.org/wiki/File:Parts_and_systems_of_Airbus_A380_on_MAKS_2011_(02).jpg)' -->
 
 ---
 
@@ -1695,6 +1719,7 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 - ersichtlich, ob sich Änderungen nahtlos in Bestehendes integrieren
   - Releases erfordern keinen großen Aufwand
 - sofortige Warnung wenn der Build fehlschlägt
+  - Signal an alle, dass sie dem Build nicht vertrauen können
   - Entwickler\*innen können sich drum kümmern, wenn das Wissen um die Änderung noch "frisch" ist
   - weniger Bugs in der Produktiv-Version
 - QA-Team wird weniger mit "kleinen" Fehlern aufgehalten
@@ -1734,7 +1759,7 @@ Features sollten remote an-/ausschaltbar sein.
 ### Linter
 
 - statische Analyse des Quellcodes
-- vom Team festgelegte Regeln & automatisiert überprüfbare, z.B.
+- vom Team festgelegte & automatisiert überprüfbare Regeln, z.B.
   - korrekt eingerückt?
   - auskommentierter Code?
   - ungenutzte Variablen?
@@ -1753,16 +1778,27 @@ Features sollten remote an-/ausschaltbar sein.
 | verlässlich alle Fehler erkennen | x        |        |
 | hat eine Meinung                 |          | x      |
 
+Die vom Computer zu überprüfenden Regeln werden in einer Konfigurationsdatei (z.B. `.xml` oder `.json`) festgelegt.
+
 ---
 
 ### GitHub Actions
 
+Idee: Ein [Event auf GitHub](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows) löst eine automatisierte Aktion aus, z.B.:
+
+- Push/Merge auf `main` Branch -> neue Release-Version erstellen
+- ein Issue wird erstellt -> formale Kriterien überprüfen
+- ein Pull Request wird eröffnet -> Code kompilieren und testen
+
+Was wann passieren soll wird in einer [YAML-Datei](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions) formuliert, welche im Repo im Verzeichnis `.github/workflows` liegt.
+
 ---
 
-### Projekt: Super-Linter
+### Projekt: automatisches Linting mit GitHub Action
 
 <!-- _backgroundColor: #c2f5a6 -->
 
+- Verantwortung: Developer
 - [GitHub Super-Linter](https://github.com/github/super-linter) einrichten
   - [clang-format](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) für C oder [checkstyle](https://checkstyle.org/) für Java
 - Lint-Regeln dürfen angepasst, aber nicht komplett deaktiviert werden
@@ -1781,6 +1817,9 @@ Buch: The Phoenix Project (Gene Kim, Kevin Behr, George Spafford)
 
 <https://www.atlassian.com/devops>
 DevOps Übersicht (Firma Atlassian bietet DevOps-Tools an)
+
+<https://docs.github.com/en/actions>
+GitHub Actions Dokumentation
 
 ---
 
