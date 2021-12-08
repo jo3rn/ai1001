@@ -1648,6 +1648,31 @@ DevOps
 
 ---
 
+<!-- _backgroundColor: #c2f5a6 -->
+
+### Projekt: Was macht der PO?
+
+- formuliert und verfeinert User Stories, Aufgaben & Vision
+- gibt Akzeptanzkritieren vor und überprüft deren Einhaltung
+- entwickelt eine passende Methode der Priorisierung
+- analysiert Markt und Stand der Technik
+- prüft das Produkt selbst
+- holt Feedback ein (z.B. User Tests)
+- Kommunikationskanal zu Stakeholdern (z.B. Auerbach)
+- bereitet Product Pitch vor und kann ihn jederzeit abfeuern
+
+---
+
+### Lerntagebücher: Diskussion (Woche 7)
+
+<!-- _backgroundColor: #c2f5a6 -->
+
+1. > [Im] Product Backlog (...) definiert der Product Owner seine Ziele und Wünsche für das Projekt (...). Diese werden dann von dem Scrum Master (...) in das Sprint Backlog (...) übertragen.
+2. > Der Developer erstellt einen Plan für das Projekt und entscheidet auch mit wann ein Meilenstein als erledigt gilt.
+3. > Am Ende eines Projekts ist es hilfreich nocheinmal über das Product Backlog drüber zu gehen, um nachzuschauen ob alles umgesetzt wurde, was gewünscht war.
+
+---
+
 ![bg contain](./img/devops-toolchain.svg)
 
 <!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg)' -->
@@ -1683,7 +1708,7 @@ Gute Zusammenarbeit zwischen **Development** und **Operations** durch
 
 Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 
-- den Build-Prozess soweit wie möglich automatisieren
+- den **Build-Prozess** soweit wie möglich automatisieren
   - statische Code-Analyse
   - Kompilieren
   - deploybare Artefakte erzeugen
@@ -1701,6 +1726,19 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 ![bg right:30% 50%](img/lava_green.png)
 
 <!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:ContinuousIntegration.png)' -->
+
+---
+
+#### CI und Scrum
+
+- Wiederholung:
+  **Transparenz** ermöglicht **Überprüfung** ermöglicht **Anpassung**.
+  Transparenz erfordert **Mut** und **Offenheit**.
+- "grüner Build"
+  - als Teil der Definition of Done
+  - signalisiert "brauchbaren" Stand für das Sprint Review
+- CI-Ergebnisse als Input für Daily und Retrospektive:
+  Gibt es Prozessprobleme oder Blockaden?
 
 ---
 
@@ -1728,11 +1766,18 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 
 ### Continuous Delivery
 
-- den Auslieferungs-Prozess soweit wie möglich automatisieren
-  (mit Klick auf einen Button)
+![w:100](./img/delivery.svg)
+
+den **Auslieferungs-Prozess** soweit wie möglich automatisieren
+("mit Klick auf einen Button"):
+
   - Weiterentwicklungen in eine Testumgebung bringen
   - Releases in eine Produktivumgebung bringen
   - User sieht nur fertig entwickelte Features
+
+![w:100](./img/delivery.svg)
+
+<!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:Noun_48949_-_Delivery.svg)' -->
 
 ---
 
@@ -1752,33 +1797,65 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 
 ...passiert wenn Continuous Delivery ohne manuelles Zutun abläuft.
 
-Features sollten remote an-/ausschaltbar sein.
+Unveröffentlichte Features sind im Release...
+
+- bereits (teil-)integriert (siehe z.B. [PokeMiners](https://twitter.com/poke_miners))
+- "aus der Ferne" an-/ausschaltbar, z.B. via [Feature Flags](https://docs.gitlab.com/ee/operations/feature_flags.html)
 
 ---
 
-### Linter
+### Statische Analyse von Code
 
-- statische Analyse des Quellcodes
-- vom Team festgelegte & automatisiert überprüfbare Regeln, z.B.
-  - korrekt eingerückt?
-  - auskommentierter Code?
-  - ungenutzte Variablen?
-- Warnung oder automatische Korrektur bei Regelverstößen
-- kommt zum Einsatz:
-  - in IDEs
-  - als Arbeitsschritt in Continuous Integration
+- vom Team festgelegte & automatisiert überprüfbare Regeln
+- bei Regelverstoß: Hinweis oder automatische Korrektur
+- in IDEs integriert oder als CI-Schritt ausgeführt
+
+![h:300](./img/magnifying_glass.svg)
 
 ---
 
-#### Linter: Warum Style Check automatisieren?
+#### Statische Analyse: Code Smells
+
+qualitative Schwachstellen, Bugs, unnötig komplizierte Konstrukte,...
+
+Beispiele:
+
+- ungenutzte Variablen
+- nicht erreichbarer Code
+- Duplikate
+- Schleifen mit nur einer Iteration
+- [`scanf()` ohne Feldbreite](https://rules.sonarsource.com/c/RSPEC-1079)
+- [Go To Statement Considered Harmful](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD215.html)
+
+---
+
+#### Statische Analyse: Code Style
+
+Vorgaben an die Syntax von Code
+
+Beispiele:
+
+- einheitliche Einrückung
+- Namenskonventionen
+- Reihenfolge von Importen, Schlüsselwörtern
+- Zeilenlänge
+- Klammerung von Blöcken
+- dokumentiert, z.B. via [Javadoc](https://www.oracle.com/java/technologies/javase/javadoc-tool.html) oder [Doxygen](https://www.doxygen.nl/)
+
+---
+
+##### Code Style: Linter
+
+1. Zu überprüfenden Regeln werden in einer Konfigurationsdatei (z.B. `.xml` oder `.json`) festgelegt.
+2. Ein Programm (_Linter_) sucht die Dateien nach Regelbrüchen ab.
+
+Warum Code Style Check automatisieren:
 
 |                                  | Computer | Mensch |
 | -------------------------------- | -------- | ------ |
 | Fehler schnell erkennen          | x        |        |
 | verlässlich alle Fehler erkennen | x        |        |
 | hat eine Meinung                 |          | x      |
-
-Die vom Computer zu überprüfenden Regeln werden in einer Konfigurationsdatei (z.B. `.xml` oder `.json`) festgelegt.
 
 ---
 
@@ -1794,17 +1871,19 @@ Was wann passieren soll wird in einer [YAML-Datei](https://docs.github.com/en/ac
 
 ---
 
-### Projekt: automatisches Linting mit GitHub Action
+### Projekt: Linting mit GitHub Action
 
 <!-- _backgroundColor: #c2f5a6 -->
 
 - Verantwortung: Developer
 - [GitHub Super-Linter](https://github.com/github/super-linter) einrichten
-  - [clang-format](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) für C oder [checkstyle](https://checkstyle.org/) für Java
-- Lint-Regeln dürfen angepasst, aber nicht komplett deaktiviert werden
-- Linter soll mind. vor Merge auf Haupt-Branch laufen, besser noch: bei jedem Commit
+  - [clang-format](https://clang.llvm.org/docs/ClangFormatStyleOptions.html) für C ([Beispiel-Regeln](https://gist.github.com/jo3rn/946f3170d06b334b714e6ca937d2990f))
+  - [checkstyle](https://checkstyle.org/) für Java ([Beispiel-Regeln](https://gist.github.com/jo3rn/3c9815d464a26dc0c0c55964cb89b2cf))
+- Regeln dürfen angepasst, aber nicht komplett deaktiviert werden
+- Linter soll mind. vor Merge auf Haupt-Branch laufen
+  besser noch: bei jedem Commit
 
-(evtl. veraltete) Videos zur Einrichtung aus letztem Jahr: [1](https://www.youtube.com/watch?v=NgLL0B9rZLk) & [2](https://www.youtube.com/watch?v=w3gDzgTuVcs)
+Videos zur Einrichtung aus letztem Jahr: [1](https://www.youtube.com/watch?v=NgLL0B9rZLk) & [2](https://www.youtube.com/watch?v=w3gDzgTuVcs) (nicht ganz up to date)
 
 ---
 
