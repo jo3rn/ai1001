@@ -26,3 +26,5 @@ Alle wichtigen Kommandos auf einen Blick!
 * `git remote add <name> <url>` erstellt eine neue Verbindung zu einem remote Repo. Wenn man ein solches Repo hinzugefügt hat, so kann man `<name>` in anderen Befehlen als Shortcut für `<url>`verwenden.
 
 ## Config
+
+* `git config --global user.name <name>` definiert den Autorennamen, der für alle Commits durch den aktuellen Benutzer verwendet werden soll
