@@ -617,7 +617,7 @@ Das zuvor erstellte **lokale** Repository verknüpfen wir nun mit dem **remote**
 Im Verzeichnis eures lokalen Repos:
 
 - `git remote add origin git@gitlab.cs.hs-fulda.de:fdNummer/lerntagebuch.git`
-  (`fdNummer` und Projektnamen enstprechend anpassen)
+  (`fdNummer` und Projektnamen entsprechend anpassen)
 - mit `git remote -v` prüfen, ob die `origin` gesetzt wurde
 - mit `git push -u origin --all` das Lerntagebuch zu GitLab laden
 
