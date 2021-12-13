@@ -1581,7 +1581,7 @@ Timebox: max. 4h (4-Wochen-Sprint)
 Teilnehmende: Scrum Team + wichtige Stakeholder
 
 - das Ergebnis des Sprints vorstellen
-- Fortschritt in Richtung Produkt-Ziel evaluieren
+- Fortschritt in Richtung Produkt-Ziel beurteilen
 - Entscheidungen für das weitere Vorgehen treffen
   - Haben sich äußere Umstände geändert?
   - Sind Anpassungen nötig?
