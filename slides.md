@@ -1914,7 +1914,7 @@ Reguläre Ausdrücke
 
 ---
 
-### Pattern Matching mit Git
+### Wiederholung: Pattern Matching mit Git
 
 Konsole:
 `git add *.txt`
@@ -1929,13 +1929,48 @@ Konsole:
 
 ---
 
+### Definition: Regulärer Ausdruck
+
+> An expression that describes a set of strings
+> [Oxford Handbook of Computational Linguistic](https://books.google.de/books?id=yl6AnaKtVAkC&pg=PA754&redir_esc=y#v=onepage&q&f=false)
+
+> patterns used to match character combinations in strings
+> [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+Eine formalere Definition findet sich in:
+["Representation of events in nerve nets and finite automata" (S.C. Kleene)](https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf) und dessen Nachfolgern
+
+---
+
 ### Suche nach Mustern in Texten
 
 Beispiel-Muster: eine `1` gefolgt von einer weiteren Zahl
 
-| Regex      | Treffer                                  | kein Treffer |
-| ---------- | ---------------------------------------- | ------------ |
-| `[1][0-9]` | <span class="highlight">12</span>3456789 | 987654321    |
+| Regex    | Treffer                                  | kein Treffer |
+| -------- | ---------------------------------------- | ------------ |
+| `1[0-9]` | <span class="highlight">12</span>3456789 | 987654321    |
+
+---
+
+### [grep](https://www.gnu.org/software/grep/manual/grep.html) (global regular expression print)
+
+> `grep` prints lines that contain a match for one or more patterns.
+
+Beispiele:
+
+- `grep Jörn names.txt` sucht nach Jörn in `names.txt`
+- `grep 1[0-9] nums.txt` sucht nach `10`, `11`, ..., `19` in `nums.txt`
+- `echo 123456 | grep '1\|2'` sucht nach `1` oder `2` in `123456`
+
+---
+
+#### grep unterstützt [verschiedene RegEx Syntaxen](https://www.gnu.org/software/grep/manual/grep.html#grep-Programs)
+
+`-G`: default - "basic regular expression" (BRE)
+`-E`: "extended regular expression" (ERE)
+`-P`: "Perl-compatible regular expression" (PCRE)
+
+Übersicht der Unterschiede zwischen diesen (und weiteren): [https://www.regular-expressions.info/refflavors.html](https://www.regular-expressions.info/refflavors.html)
 
 ---
 
@@ -1953,19 +1988,31 @@ Beispiel-Muster: eine `1` gefolgt von einer weiteren Zahl
 
 ### RegEx-Notation: einfache Zeichen (2/2)
 
-Sonderzeichen, die mit `\` escaped werden müssen:
+Diese **Sonderzeichen** können eine besondere Bedeutung in einer RegEx-Syntax haben. Sie müssen ggf. escaped werden (z.B. mit `\`):
 
 ```text
 \   Backslash           *   Stern
 ^   Dach                +   Plus
 $   Dollar              ()  runde Klammern
-.   Punkt               [   eckige Klammer
-|   Pipe                {   geschweifte Klammer
+.   Punkt               []  eckige Klammern
+|   Pipe                {}  geschweifte Klammern
 ```
 
-| Regex        | Treffer                                                      |
-| ------------ | ------------------------------------------------------------ |
-| `\$\{count}` | es wurde bis <span class="highlight">${count}</span> gezählt |
+---
+
+### RegEx-Notation: "Spaß" mit Sonderzeichen
+
+| grep Befehl        | Treffer                                                                      | kein Treffer  |
+| ------------------ | ---------------------------------------------------------------------------- | ------------- |
+| `grep '1$'`        |                                                                              | 1$ + 1$ = 2$  |
+| `grep '1$ +'`      | <span class="highlight">1\$ +</span> 1$ = 2$                                 |               |
+| `grep -E '1$ +'`   |                                                                              | 1$ + 1$ = 2$  |
+| `grep -E '1\$ +'`  | <span class="highlight">1\$</span> + 1$                                      | 1\$+1\$=2$    |
+| `grep -E '1\$ \+'` | <span class="highlight">1\$ +</span> 1$ = 2$                                 |               |
+| `grep '1\$'`       | <span class="highlight">1\$</span> + <span class="highlight">1\$</span> = 2$ |               |
+| `grep '2$$'`       | 1$ + 1$ = <span class="highlight">2$</span>                                  | 1$ + 1$ = 2$$ |
+
+<!-- _footer: 'siehe auch [BRE vs. ERE](https://www.gnu.org/software/sed/manual/html_node/BRE-vs-ERE.html)' -->
 
 ---
 
@@ -1973,8 +2020,8 @@ $   Dollar              ()  runde Klammern
 
 - ein `a` oder ein `R`
 - Großbuchstaben zwischen `I` und `Z`
-- kein Kleinbuchstabe zwischen `a` und `g` oder `i` und `z`
-  sowie kein Großbuchstabe zwischen `A` und `Z`
+- **kein** (`^`) Kleinbuchstabe zwischen `a` und `g` oder `i` und `z`
+  sowie **kein** Großbuchstabe zwischen `A` und `Z`
 
 | Regex          | Treffer                                                                                                                                                                                                    | kein Treffer |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
@@ -1991,8 +2038,8 @@ $   Dollar              ()  runde Klammern
 - `\s` Whitespace Zeichen
 - `.` egal was
 
-| Regex | Treffer                                                                                                                                      | kein Treffer   |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Regex |                                                                                                                                              | Treffer        | kein Treffer |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------ |
 | `\d`  | Rha<span class="highlight">6</span>ar<span class="highlight">6</span>er<span class="highlight">6</span>ar<span class="highlight">6</span>ara | Erdbeeremil    |
 | `\s`  | Rhabarberbarbaras Bar                                                                                                                        | Erdbeeremileck |
 | `.`   | Erdbeeremil                                                                                                                                  |
@@ -2015,20 +2062,22 @@ $   Dollar              ()  runde Klammern
 
 ---
 
-### RegEx-Notation: Alternierung (logisches Oder)
+### RegEx-Notation: Alternierung
+
+- `|` logisches Oder
 
 | Regex                    | Treffer                                                                                                                                      | kein Treffer |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| <code>ba&#124;ber</code> | Rha<span class="highlight">ba</span>r<span class="highlight">ber</span><span class="highlight">ba</span><span class="highlight">ba</span>ra  | Erdbeeremil  |
+| <code>ba&#124;ber</code> | Rha<span class="highlight">ba</span>r<span class="highlight">ber</span><span class="highlight">ba</span>r<span class="highlight">ba</span>ra | Erdbeeremil  |
 | <code>r(a&#124;b)</code> | Rhaba<span class="highlight">rb</span>e<span class="highlight">rb</span>a<span class="highlight">rb</span>a<span class="highlight">ra</span> | Erdbeeremil  |
 
 ---
 
 ### RegEx-Notation: Position (Anker)
 
-- Beginn der Zeichenkette
-- Ende der Zeichenkette
-- nach einem Wort (zwischen `\w` und nicht-`\w`)
+- `^` Beginn der Zeichenkette
+- `$` Ende der Zeichenkette
+- `\b` nach einem Wort (zwischen `\w` und nicht-`\w`)
 
 | Regex | Treffer                                                                              | kein Treffer |
 | ----- | ------------------------------------------------------------------------------------ | ------------ |
@@ -2038,50 +2087,105 @@ $   Dollar              ()  runde Klammern
 
 ---
 
+### Kleine Übungspause
+
+<!-- _backgroundColor: #fec7e2  -->
+
+1. `bb|[^b]{2}` bzw. `grep 'bb\|[^b]\{2\}'`
+   Welches Zitat versteckt sich hinter diesem regulären Ausdruck?
+   Tipp: Es hat etwas mit Shakespeare zu tun.
+
+2. Sucht auf [angio.net/pi](https://www.angio.net/pi/) nach eurem Geburtsdatum in $\pi$ (Pi)
+   - dort könnt ihr auch [verschiedene Dateien mit x Stellen von $\pi$](https://www.angio.net/pi/digits.html) herunterladen und auf der Konsole mit `grep` testen
+
+---
+
+### [Suchen mit vim](https://vim.fandom.com/wiki/Searching)
+
+- `/pattern`: nach _`pattern`_ suchen (vorwärts)
+- `?pattern`: nach _`pattern`_ suchen (rückwärts)
+- `n`: zum nächsten Ergebnis springen
+- `N`: zum nächsten Ergebnis in umgekehrter Richtung springen
+- `:%s/old/new/g`: alles, auf das _`old`_ zutrifft mit _`new`_ ersetzen
+- `:%s/old/new/gc`: wie oben, aber Ersetzen muss bestätigt werden
+  (`c`onfirm)
+
+---
+
 ### [Suchen mit Git](https://git-scm.com/book/en/v2/Git-Tools-Searching)
 
----
-
-### [grep](https://www.gnu.org/software/grep/manual/grep.html)
-
----
-
-### [awk](https://www.gnu.org/software/gawk/manual/gawk.html)
-
----
-
-### [sed](https://www.gnu.org/software/sed/manual/sed.html)
+- `git grep`_`pattern`_ sucht in den Dateien im Arbeitsverzeichnis nach _`pattern`_.
+  - ähnlich wie `grep -r --color=always`_`pattern`_`.`
+  - ignoriert das `.git`-Verzeichnis und hat [tlw. andere Optionen](https://git-scm.com/docs/git-grep#_options)
+  - auch `git grep`_`pattern`_`HEAD~6` usw. möglich
+- `git log -i --grep="add"` filtert das Commit-Log nach `add`
+  (mit `-i` case-insensitive)
+- `git log -G`_`pattern`_ listet die Commits, in denen sich die Vorkommen von _`pattern`_ geändert haben
 
 ---
 
-### Suchen mit vim
+### Kommandozeilen-Tools [sed](https://www.gnu.org/software/sed/manual/sed.html) & [awk](https://www.gnu.org/software/gawk/manual/gawk.html)
+
+sed & awk sind Programme, die
+
+1. Daten einlesen
+2. Daten (zeilenweise) **filtern** und/oder manipulieren
+3. Daten (ggf. neu formatiert) ausgeben
+
+RegEx mit sed und awk: `/`_`pattern`_`/`
+
+---
+
+### Beispiele für sed & awk
+
+`sed 's/0\+\([1-9]\)/\1/' nums.txt`
+
+- entfernt alle Nullen am Anfang einer Zahlenfolge (`s`ubstitute)
+- Klammern `(...)` bilden eine "capturing group", die mit `\1` wiederverwendbar ist
+
+`awk '/[ab]/ {print $1}' names.txt`
+
+- gibt das erste Wort aller Einträge aus, die ein `a` oder `b` enthalten
 
 ---
 
 ### hangman cheating (1/2)
 
-Das FreeBSD Spiel [hangman](https://manpages.debian.org/bullseye/bsdgames/hangman.6.en.html) speist sich aus dieser Datei:
-`/usr/share/dict/words`
-
-Mit regulären Ausdrücken nach dem gesuchten Wort filtern:
+Das FreeBSD Spiel [hangman](https://manpages.debian.org/bullseye/bsdgames/hangman.6.en.html) speist sich aus der Datei `/usr/share/dict/words`, welche sich natürlich auch filtern lässt, z.B.:
 
 - Anzahl Buchstaben gesamt, z.B. 7:
+  - `grep '^.\{7\}$'`_`file`_ oder `grep '^.......$'`_`file`_
+  - `sed -n '/^.\{7\}$/p'`_`file`_
   - `awk 'length($0)==7'`_`file`_
-  - `sed -rn '/^.{7}$/p'`_`file`_
-  - `grep -E '^.{7}$'`_`file`_ (`-E` für [extended RegEx](https://www.gnu.org/software/sed/manual/html_node/BRE-vs-ERE.html))
 
 ---
 
 ### hangman cheating (2/2)
 
 - Position erratener Buchstaben, z.B. `t` an dritter Stelle:
-  - `awk`_`???`_
-  - `sed`_`???`_
   - `grep`_`???`_
+  - `sed`_`???`_
+  - `awk`_`???`_
 - nicht vorkommende Buchstaben, z.B. kein `b` und kein `m`:
-  - `awk`_`???`_
-  - `sed`_`???`_
   - `grep`_`???`_
+  - `sed`_`???`_
+  - `awk`_`???`_
+
+---
+
+### Projekt: Feature Request: Easter Egg einbauen
+
+<!-- _backgroundColor: #c2f5a6 -->
+
+Ein Easter Egg ist ein verstecktes Ereignis in Software, Film, Musik,...
+
+Beispiele:
+
+- `about:mozilla` in der Adressbar des Firefox Browsers
+- Der Igel im Bild des [Eintrags zu Easter Eggs auf Wikipedia](https://de.wikipedia.org/wiki/Easter_Egg)
+- Die Skala des IMDb Ratings von [_This is Spinal Tap_](https://www.imdb.com/title/tt0088258/)
+- `:help 42` in vim
+- "do a barrel roll" oder "askew" in der Google Suche
 
 ---
 
