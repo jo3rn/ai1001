@@ -1,0 +1,542 @@
+Jan 12 10:37:37 www postfix/bounce[10804]: EB8FBF0023: sender non-delivery notification: E71D9F001A
+Jan 12 10:37:37 www postfix/qmgr[2599]: EB8FBF0023: removed
+Jan  7 09:42:22 www postfix/smtpd[16193]: EB8FBF0023: client=unknown[200.68.72.101], sasl_method=PLAIN, sasl_username=cypress@hopefulpress.com
+Jan  7 09:42:32 www postfix/cleanup[16227]: EB8FBF0023: message-id=<dfce88ce9b2c$15e15a8d$958cd30f$@hopefulpress.com>
+Jan  7 09:42:32 www postfix/smtp[16220]: EB8FBF0023: host mf-3.ties2.net[204.169.121.13] said: 451 The server is too busy, please try again later (in reply to RCPT TO command)
+Jan  7 09:42:32 www postfix/smtp[16207]: EB8FBF0023: to=<don.polovich@rapidcityjournal.com>, relay=cluster9.us.messagelabs.com[216.82.249.35]:25, delay=11, delays=10/0.01/0.2/0.17, dsn=5.0.0, status=bounced (host cluster9.us.messagelabs.com[216.82.249.35] said: 550-Invalid recipient <don.polovich@rapidcityjournal.com> 550 (#5.1.1) (in reply to RCPT TO command))
+Jan  7 09:42:33 www postfix/smtp[16204]: EB8FBF0023: to=<dmorrison@taunton.com>, relay=mx2.tauntonnet.com[209.244.157.67]:25, delay=11, delays=10/0.01/0.46/0.16, dsn=2.0.0, status=sent (250 2.0.0 OK E0/7E-03567-8D54DA45)
+Jan  7 09:42:33 www postfix/smtp[16230]: EB8FBF0023: to=<doug.bakkum@anoka.k12.mn.us>, relay=filter.anoka.k12.mn.us[206.131.130.254]:25, delay=11, delays=10/0.01/0.25/0.61, dsn=2.0.0, status=sent (250 Ok: queued as 269871500043)
+Jan  7 09:42:33 www postfix/smtp[16236]: EB8FBF0023: host smtp0.logixcom.net[216.201.128.35] said: 450 4.7.1 <dons@stonepanels.com>: Recipient address rejected: I have not seen you in these woods, come back later (in reply to RCPT TO command)
+Jan  7 09:42:33 www postfix/smtp[16221]: EB8FBF0023: to=<docharpk@gmail.com>, relay=gmail-smtp-in.l.google.com[64.233.171.27]:25, delay=11, delays=10/0.01/0.06/0.88, dsn=5.7.1, status=bounced (host gmail-smtp-in.l.google.com[64.233.171.27] said: 550-5.7.1 [173.255.224.48      12] Our system has detected that this message is 550-5.7.1 likely unsolicited mail. To reduce the amount of spam sent to Gmail, 550-5.7.1 this message has been blocked. Please visit 550-5.7.1 http://support.google.com/mail/bin/answer.py?hl=en&answer=188131 for 550 5.7.1 more information. b8si2159349qaa.41 - gsmtp (in reply to end of DATA command))
+Jan  7 09:42:33 www postfix/smtp[16221]: EB8FBF0023: to=<donna.m.richardson@gmail.com>, relay=gmail-smtp-in.l.google.com[64.233.171.27]:25, delay=11, delays=10/0.01/0.06/0.88, dsn=5.7.1, status=bounced (host gmail-smtp-in.l.google.com[64.233.171.27] said: 550-5.7.1 [173.255.224.48      12] Our system has detected that this message is 550-5.7.1 likely unsolicited mail. To reduce the amount of spam sent to Gmail, 550-5.7.1 this message has been blocked. Please visit 550-5.7.1 http://support.google.com/mail/bin/answer.py?hl=en&answer=188131 for 550 5.7.1 more information. b8si2159349qaa.41 - gsmtp (in reply to end of DATA command))
+Jan  7 09:42:33 www postfix/smtp[16224]: EB8FBF0023: to=<adoherty@hanley-wood.com>, relay=hanleywood.com.mail5.psmtp.com[64.18.5.10]:25, delay=12, delays=10/0.01/0.25/1.1, dsn=2.0.0, status=sent (250 Thanks)
+Jan  7 09:42:33 www postfix/smtp[16236]: EB8FBF0023: to=<dons@stonepanels.com>, relay=smtp0.logixcom.net[216.201.128.38]:25, delay=12, delays=10/0.01/1.1/0.36, dsn=4.7.1, status=deferred (host smtp0.logixcom.net[216.201.128.38] said: 450 4.7.1 <dons@stonepanels.com>: Recipient address rejected: I have not seen you in these woods,  (in reply to RCPT TO command))
+Jan  7 09:42:34 www postfix/smtp[16220]: EB8FBF0023: to=<dneclark@ties.k12.mn.us>, relay=mf-2.ties2.net[198.22.19.13]:25, delay=13, delays=10/0.01/0.38/2.1, dsn=5.0.0, status=bounced (host mf-2.ties2.net[198.22.19.13] said: 550 Requested action was not taken because this server doesn't handle mail for that user (in reply to RCPT TO command))
+Jan  7 09:42:35 www postfix/smtp[16209]: EB8FBF0023: host mx1.usgo.net[64.131.63.183] said: 451 Resources temporarily unavailable (in reply to MAIL FROM command)
+Jan  7 09:42:35 www postfix/smtp[16208]: EB8FBF0023: to=<Donald.Ritter@baesystems.com>, relay=dmzms99901.na.baesystems.com[149.32.200.65]:25, delay=14, delays=10/0.01/0.58/2.9, dsn=2.0.0, status=sent (250 ok:  Message 468518867 accepted)
+Jan  7 09:42:36 www postfix/smtp[16209]: EB8FBF0023: to=<don.eller@usfamily.net>, relay=mx2.usgo.net[64.131.63.184]:25, delay=14, delays=10/0.01/3.8/0.06, dsn=4.0.0, status=deferred (host mx2.usgo.net[64.131.63.184] said: 451 Resources temporarily unavailable (in reply to MAIL FROM command))
+Jan  7 09:42:37 www postfix/smtp[16222]: EB8FBF0023: to=<doris.lohrman@meredith.com>, relay=meredith-com.mail.protection.outlook.com[207.46.163.170]:25, delay=15, delays=10/0.01/0.25/5, dsn=5.7.1, status=bounced (host meredith-com.mail.protection.outlook.com[207.46.163.170] said: 550 5.7.1 Service unavailable; Client host [173.255.224.48] blocked using FBLW15; To request removal from this list please forward this message to delist@messaging.microsoft.com (in reply to RCPT TO command))
+Jan  7 09:42:37 www postfix/smtp[16234]: EB8FBF0023: to=<don.eller@medtronic.com>, relay=medtronic-com.mail.protection.outlook.com[207.46.163.247]:25, delay=15, delays=10/0.01/0.26/5.1, dsn=5.7.1, status=bounced (host medtronic-com.mail.protection.outlook.com[207.46.163.247] said: 550 5.7.1 Service unavailable; Client host [173.255.224.48] blocked using FBLW15; To request removal from this list please forward this message to delist@messaging.microsoft.com (in reply to RCPT TO command))
+Jan  7 09:42:44 www postfix/smtp[16198]: EB8FBF0023: to=<dmoc0001@umn.edu>, relay=mhub-mp.tc.umn.edu[134.84.119.132]:25, delay=23, delays=10/0.01/11/1.2, dsn=5.1.1, status=bounced (host mhub-mp.tc.umn.edu[134.84.119.132] said: 550 5.1.1 <dmoc0001@umn.edu>... User unknown (in reply to RCPT TO command))
+Jan  7 09:43:02 www postfix/bounce[16249]: EB8FBF0023: sender non-delivery notification: A45D6F0046
+Jan  7 09:52:03 www postfix/smtp[16336]: EB8FBF0023: host mx1.usgo.net[64.131.63.183] said: 451 Resources temporarily unavailable (in reply to MAIL FROM command)
+Jan  7 09:52:03 www postfix/smtp[16322]: EB8FBF0023: to=<dons@stonepanels.com>, relay=smtp0.logixcom.net[216.201.128.35]:25, delay=581, delays=580/0.14/0.57/0.5, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 76E764003495)
+Jan  7 09:52:04 www postfix/smtp[16336]: EB8FBF0023: to=<don.eller@usfamily.net>, relay=mx2.usgo.net[64.131.63.184]:25, delay=582, delays=580/0.15/1.6/0.05, dsn=4.0.0, status=deferred (host mx2.usgo.net[64.131.63.184] said: 451 Resources temporarily unavailable (in reply to MAIL FROM command))
+Jan  7 10:07:05 www postfix/smtp[16473]: EB8FBF0023: to=<don.eller@usfamily.net>, relay=mx1.usgo.net[64.131.63.183]:25, delay=1483, delays=1480/0.05/0.63/2.3, dsn=2.0.0, status=sent (250 Ok)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 6D53261E0AB7: from=<postmaster@mail.etel-tuning.de>, size=4778, nrcpt=1 (queue active)
+Sep 26 20:33:56 v0022 postfix/smtpd[15715]: 70FA761E0AB8: client=localhost[127.0.0.1]
+Sep 26 20:33:56 v0022 postfix/cleanup[15707]: 70FA761E0AB8: message-id=<26973523483469171783046237@light.prinknest.com>
+Sep 26 20:33:56 v0022 amavis[13532]: (13532-05) Passed SPAM {RelayedTaggedInbound,Quarantined}, [199.103.5.118]:53874 [63.143.35.243] <mailer@maysoft.org> -> <stegerpa@etel-tuning.de>, quarantine: p/spam-pJtlPwqp1QBa.gz, Queue-ID: 415CC61E0AB9, Message-ID: <26973523483469171783046237@light.prinknest.com>, mail_id: pJtlPwqp1QBa, Hits: 7.617, size: 14665, queued_as: 70FA761E0AB8, 3762 ms
+Sep 26 20:33:56 v0022 postfix/smtp[15708]: 415CC61E0AB9: to=<stegerpa@etel-tuning.de>, orig_to=<info@etel-tuning.de>, relay=127.0.0.1[127.0.0.1]:10024, delay=7.2, delays=0.27/3.2/0.01/3.8, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 70FA761E0AB8)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 70FA761E0AB8: from=<mailer@maysoft.org>, size=15503, nrcpt=1 (queue active)
+Sep 26 20:33:56 v0022 postfix/pipe[15716]: 6D53261E0AB7: to=<postmaster@etel-tuning.de>, relay=dovecot, delay=0.05, delays=0.02/0/0/0.03, dsn=5.1.1, status=bounced (user unknown)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 415CC61E0AB9: removed
+Sep 26 20:33:56 v0022 postfix/cleanup[15719]: 78C0761E0AB9: message-id=<20140926183356.78C0761E0AB9@etel-tuning.de>
+Sep 26 20:33:56 v0022 dovecot: lda(stegerpa@etel-tuning.de): sieve: msgid=<26973523483469171783046237@light.prinknest.com>: stored mail into mailbox 'Spam'
+Sep 26 20:33:56 v0022 postfix/pipe[15725]: 70FA761E0AB8: to=<stegerpa@etel-tuning.de>, relay=dovecot, delay=0.05, delays=0.02/0/0/0.03, dsn=2.0.0, status=sent (delivered via dovecot service)
+Sep 26 20:33:56 v0022 postfix/bounce[15718]: 6D53261E0AB7: sender non-delivery notification: 78C0761E0AB9
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 70FA761E0AB8: removed
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 6D53261E0AB7: removed
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 78C0761E0AB9: from=<>, size=6649, nrcpt=1 (queue active)
+Sep 26 20:33:56 v0022 postfix/smtp[15722]: 78C0761E0AB9: to=<postmaster@mail.etel-tuning.de>, relay=none, delay=0.05, delays=0.03/0/0.01/0, dsn=5.4.6, status=bounced (mail for mail.etel-tuning.de loops back to myself)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 78C0761E0AB9: removed
+Sep 26 20:33:56 v0022 postfix/smtpd[15715]: 92D9461E0AB7: client=localhost[127.0.0.1]
+Sep 26 20:33:56 v0022 postfix/cleanup[15707]: 92D9461E0AB7: message-id=<VA6rthgiDQY9sC@mail.etel-tuning.de>
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 92D9461E0AB7: from=<postmaster@mail.etel-tuning.de>, size=2682, nrcpt=1 (queue active)
+Sep 26 20:33:56 v0022 amavis[13532]: (13532-05-2) Blocked INFECTED (Eicar-Test-Signature) {DiscardedInbound,Quarantined}, [199.103.5.118]:53874 [199.103.5.118] <mailer@maysoft.org> -> <stegerpa@etel-tuning.de>, quarantine: 6/virus-6rthgiDQY9sC, Queue-ID: 402C461E0ABB, Message-ID: <OFB0FA0FA0.02E43928-ON86257D5F.00656F18@maysoft.com>, mail_id: 6rthgiDQY9sC, Hits: -, size: 1984, 122 ms
+Sep 26 20:33:56 v0022 postfix/smtp[15708]: 402C461E0ABB: to=<stegerpa@etel-tuning.de>, orig_to=<info@etel-tuning.de>, relay=127.0.0.1[127.0.0.1]:10024, conn_use=2, delay=6.4, delays=0.16/6.1/0/0.13, dsn=2.7.0, status=sent (250 2.7.0 Ok, discarded, id=13532-05-2 - INFECTED: Eicar-Test-Signature)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 402C461E0ABB: removed
+Sep 26 20:33:56 v0022 postfix/pipe[15716]: 92D9461E0AB7: to=<postmaster@etel-tuning.de>, relay=dovecot, delay=0.03, delays=0.01/0/0/0.02, dsn=5.1.1, status=bounced (user unknown)
+Sep 26 20:33:56 v0022 postfix/cleanup[15719]: 9C91C61E0AB9: message-id=<20140926183356.9C91C61E0AB9@etel-tuning.de>
+Sep 26 20:33:56 v0022 postfix/bounce[15718]: 92D9461E0AB7: sender non-delivery notification: 9C91C61E0AB9
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 9C91C61E0AB9: from=<>, size=4555, nrcpt=1 (queue active)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 92D9461E0AB7: removed
+Sep 26 20:33:56 v0022 postfix/smtp[15722]: 9C91C61E0AB9: to=<postmaster@mail.etel-tuning.de>, relay=none, delay=0.08, delays=0.01/0/0.06/0, dsn=5.4.6, status=bounced (mail for mail.etel-tuning.de loops back to myself)
+Sep 26 20:33:56 v0022 postfix/qmgr[13593]: 9C91C61E0AB9: removed
+Sep 26 20:33:58 v0022 postfix/smtpd[15735]: connect from localhost[127.0.0.1]
+Sep 26 20:33:58 v0022 postfix/smtpd[15735]: 4B2BD61E0AB7: client=localhost[127.0.0.1]
+Sep 26 20:33:58 v0022 postfix/cleanup[15707]: 4B2BD61E0AB7: message-id=<8462568675623.29466710558049@carol>
+Sep 26 20:33:58 v0022 postfix/qmgr[13593]: 4B2BD61E0AB7: from=<mailer@maysoft.org>, size=41393, nrcpt=1 (queue active)
+Sep 26 20:33:58 v0022 amavis[13533]: (13533-05) Passed CLEAN {RelayedInbound}, [199.103.5.118]:53874 [181.174.11.199] <mailer@maysoft.org> -> <stegerpa@etel-tuning.de>, Queue-ID: 9D7EA61E0ABA, Message-ID: <8462568675623.29466710558049@carol>, mail_id: 8N4k0N0Z9Ntl, Hits: 0.001, size: 40936, queued_as: 4B2BD61E0AB7, 5132 ms
+Sep 26 20:33:58 v0022 postfix/smtp[15711]: 9D7EA61E0ABA: to=<stegerpa@etel-tuning.de>, orig_to=<info@etel-tuning.de>, relay=127.0.0.1[127.0.0.1]:10024, delay=8.7, delays=0.5/3.1/0/5.1, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 4B2BD61E0AB7)
+Sep 26 20:33:58 v0022 postfix/qmgr[13593]: 9D7EA61E0ABA: removed
+Sep 26 20:33:58 v0022 dovecot: lda(stegerpa@etel-tuning.de): sieve: msgid=<8462568675623.29466710558049@carol>: stored mail into mailbox 'INBOX'
+Sep 26 20:33:58 v0022 postfix/pipe[15725]: 4B2BD61E0AB7: to=<stegerpa@etel-tuning.de>, relay=dovecot, delay=0.04, delays=0.02/0/0/0.02, dsn=2.0.0, status=sent (delivered via dovecot service)
+Sep 26 20:33:58 v0022 postfix/qmgr[13593]: 4B2BD61E0AB7: removed
+Sep 26 20:34:00 v0022 postfix/smtpd[15715]: 7E6EE61E0AB7: client=localhost[127.0.0.1]
+Sep 26 20:34:00 v0022 postfix/cleanup[15719]: 7E6EE61E0AB7: message-id=<178e8a55f9069d1a014fe63_dc61fb53@inexpensivebody.com>
+Sep 26 20:34:00 v0022 postfix/qmgr[13593]: 7E6EE61E0AB7: from=<mailer@maysoft.org>, size=7424, nrcpt=1 (queue active)
+Sep 26 20:34:00 v0022 amavis[13532]: (13532-05-3) Passed CLEAN {RelayedInbound}, [199.103.5.118]:53874 [209.217.227.14] <mailer@maysoft.org> -> <stegerpa@etel-tuning.de>, Queue-ID: 8350F61E0ABC, Message-ID: <178e8a55f9069d1a014fe63_dc61fb53@inexpensivebody.com>, mail_id: wiDZ73TIJlu4, Hits: 4.526, size: 6674, queued_as: 7E6EE61E0AB7, 3902 ms
+Sep 26 20:34:00 v0022 postfix/smtp[15708]: 8350F61E0ABC: to=<stegerpa@etel-tuning.de>, orig_to=<info@etel-tuning.de>, relay=127.0.0.1[127.0.0.1]:10024, conn_use=3, delay=10, delays=0.14/6/0/3.9, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 7E6EE61E0AB7)
+Sep 26 20:34:00 v0022 postfix/qmgr[13593]: 8350F61E0ABC: removed
+Sep 26 20:34:00 v0022 dovecot: lda(stegerpa@etel-tuning.de): sieve: msgid=<178e8a55f9069d1a014fe63_dc61fb53@inexpensivebody.com>: stored mail into mailbox 'INBOX'
+Sep 26 20:34:00 v0022 postfix/pipe[15716]: 7E6EE61E0AB7: to=<stegerpa@etel-tuning.de>, relay=dovecot, delay=0.03, delays=0.01/0/0/0.02, dsn=2.0.0, status=sent (delivered via dovecot service)
+Sep 26 20:34:00 v0022 postfix/qmgr[13593]: 7E6EE61E0AB7: removed
+Sep 26 20:34:08 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15740, TLS, session=<HA6cKfwDgQAu34AI>
+Sep 26 20:34:10 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15742, TLS, session=<unu6KfwDdwAu34AI>
+Sep 26 20:35:08 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=31.47.250.227, lip=31.47.250.227, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<NcgxLfwDRAAfL/rj>
+Sep 26 20:35:15 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=1049 out=52814
+Sep 26 20:35:20 v0022 dovecot: imap-login: Disconnected (disconnected before greeting, waited 0 secs): user=<>, rip=31.47.250.227, lip=31.47.250.227, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<BDrkLfwDZQAfL/rj>
+Sep 26 20:35:24 v0022 dovecot: auth-worker(15746): mysql(localhost): Connected to database postfixdb
+Sep 26 20:35:26 v0022 dovecot: imap-login: Disconnected (auth failed, 1 attempts in 2 secs): user=<info@etel-tuning.de>, method=PLAIN, rip=31.47.250.227, lip=31.47.250.227, secured, session=<YUErLvwDWQAfL/rj>
+Sep 26 20:35:31 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=31.47.250.227, lip=31.47.250.227, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<h4CTLvwDhwAfL/rj>
+Sep 26 20:35:35 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=127.0.0.1, lip=127.0.0.1, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<p4rKLvwDFAB/AAAB>
+Sep 26 20:35:38 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=127.0.0.1, lip=127.0.0.1, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<On0BL/wDHgB/AAAB>
+Sep 26 20:36:25 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=127.0.0.1, lip=127.0.0.1, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<GwXIMfwDqAB/AAAB>
+Sep 26 20:36:36 v0022 dovecot: imap-login: Disconnected (no auth attempts in 0 secs): user=<>, rip=31.47.250.227, lip=31.47.250.227, TLS handshaking: SSL_accept() failed: error:14094418:SSL routines:SSL3_READ_BYTES:tlsv1 alert unknown ca: SSL alert number 48, session=<UQNsMvwDQwAfL/rj>
+Sep 26 20:37:10 v0022 postfix/anvil[15704]: statistics: max connection rate 1/60s for (smtp:199.103.5.118) at Sep 26 20:33:48
+Sep 26 20:37:10 v0022 postfix/anvil[15704]: statistics: max connection count 1 for (smtp:199.103.5.118) at Sep 26 20:33:48
+Sep 26 20:37:10 v0022 postfix/anvil[15704]: statistics: max cache size 1 at Sep 26 20:33:48
+Sep 26 20:37:18 v0022 postfix/scache[15721]: statistics: start interval Sep 26 20:33:52
+Sep 26 20:37:18 v0022 postfix/scache[15721]: statistics: domain lookup hits=2 miss=2 success=50%
+Sep 26 20:37:18 v0022 postfix/scache[15721]: statistics: address lookup hits=0 miss=2 success=0%
+Sep 26 20:37:18 v0022 postfix/scache[15721]: statistics: max simultaneous domains=1 addresses=1 connection=1
+Sep 26 20:38:58 v0022 postfix/smtpd[15735]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Sep 26 20:38:58 v0022 postfix/smtpd[15735]: disconnect from localhost[127.0.0.1]
+Sep 26 20:39:00 v0022 postfix/smtpd[15715]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Sep 26 20:39:00 v0022 postfix/smtpd[15715]: disconnect from localhost[127.0.0.1]
+Sep 26 20:43:10 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=1773 out=41252
+Sep 26 20:58:17 v0022 postfix/smtpd[15790]: connect from unknown[188.191.202.19]
+Sep 26 20:58:18 v0022 postfix/smtpd[15790]: NOQUEUE: reject: RCPT from unknown[188.191.202.19]: 550 5.1.1 <le@etel-tuning.de>: Recipient address rejected: User unknown in virtual mailbox table; from=<> to=<le@etel-tuning.de> proto=SMTP helo=<188.191.202.19>
+Sep 26 20:58:18 v0022 postfix/smtpd[15790]: lost connection after RCPT from unknown[188.191.202.19]
+Sep 26 20:58:18 v0022 postfix/smtpd[15790]: disconnect from unknown[188.191.202.19]
+Sep 26 21:01:38 v0022 postfix/anvil[15792]: statistics: max connection rate 1/60s for (smtp:188.191.202.19) at Sep 26 20:58:17
+Sep 26 21:01:38 v0022 postfix/anvil[15792]: statistics: max connection count 1 for (smtp:188.191.202.19) at Sep 26 20:58:17
+Sep 26 21:01:38 v0022 postfix/anvil[15792]: statistics: max cache size 1 at Sep 26 20:58:17
+Sep 26 21:04:15 v0022 dovecot: auth-worker(15805): mysql(localhost): Connected to database postfixdb
+Sep 26 21:04:15 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15807, TLS, session=<DktYlfwDwAAu34AI>
+Sep 26 21:04:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 21:34:16 v0022 dovecot: auth-worker(15856): mysql(localhost): Connected to database postfixdb
+Sep 26 21:34:16 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15858, TLS, session=<tNOxAP0DFQAu34AI>
+Sep 26 21:34:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 22:00:26 v0022 postfix/smtpd[15896]: connect from unknown[185.57.82.25]
+Sep 26 22:00:26 v0022 postfix/smtpd[15896]: NOQUEUE: reject: RCPT from unknown[185.57.82.25]: 554 5.7.1 <robolaura@comcast.net>: Relay access denied; from=<info@etel-tuning.de> to=<robolaura@comcast.net> proto=ESMTP helo=<google.com>
+Sep 26 22:00:27 v0022 postfix/smtpd[15896]: disconnect from unknown[185.57.82.25]
+Sep 26 22:03:47 v0022 postfix/anvil[15898]: statistics: max connection rate 1/60s for (smtp:185.57.82.25) at Sep 26 22:00:26
+Sep 26 22:03:47 v0022 postfix/anvil[15898]: statistics: max connection count 1 for (smtp:185.57.82.25) at Sep 26 22:00:26
+Sep 26 22:03:47 v0022 postfix/anvil[15898]: statistics: max cache size 1 at Sep 26 22:00:26
+Sep 26 22:04:16 v0022 dovecot: auth-worker(15911): mysql(localhost): Connected to database postfixdb
+Sep 26 22:04:16 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15913, TLS, session=<81f7a/0DKwAu34AI>
+Sep 26 22:04:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 22:17:53 v0022 postfix/smtpd[15945]: connect from unknown[203.98.194.90]
+Sep 26 22:17:54 v0022 postfix/smtpd[15945]: NOQUEUE: reject: RCPT from unknown[203.98.194.90]: 550 5.1.1 <uheussne@etel-tuning.de>: Recipient address rejected: User unknown in virtual mailbox table; from=<uheussne@etel-tuning.de> to=<uheussne@etel-tuning.de> proto=ESMTP helo=<[203.98.194.90]>
+Sep 26 22:17:54 v0022 postfix/smtpd[15945]: lost connection after DATA from unknown[203.98.194.90]
+Sep 26 22:17:54 v0022 postfix/smtpd[15945]: disconnect from unknown[203.98.194.90]
+Sep 26 22:21:14 v0022 postfix/anvil[15947]: statistics: max connection rate 1/60s for (smtp:203.98.194.90) at Sep 26 22:17:53
+Sep 26 22:21:14 v0022 postfix/anvil[15947]: statistics: max connection count 1 for (smtp:203.98.194.90) at Sep 26 22:17:53
+Sep 26 22:21:14 v0022 postfix/anvil[15947]: statistics: max cache size 1 at Sep 26 22:17:53
+Sep 26 22:34:16 v0022 dovecot: auth-worker(15961): mysql(localhost): Connected to database postfixdb
+Sep 26 22:34:16 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=15963, TLS, session=<MTFG1/0DwwAu34AI>
+Sep 26 22:34:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 23:04:16 v0022 dovecot: auth-worker(16008): mysql(localhost): Connected to database postfixdb
+Sep 26 23:04:16 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=16010, TLS, session=<dOKPQv4DhgAu34AI>
+Sep 26 23:04:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 23:09:24 v0022 postfix/smtpd[16035]: connect from unknown[197.1.247.143]
+Sep 26 23:09:26 v0022 postfix/smtpd[16035]: NOQUEUE: reject: RCPT from unknown[197.1.247.143]: 550 5.1.1 <uheussne@etel-tuning.de>: Recipient address rejected: User unknown in virtual mailbox table; from=<uheussne@etel-tuning.de> to=<uheussne@etel-tuning.de> proto=ESMTP helo=<[197.1.247.143]>
+Sep 26 23:09:27 v0022 postfix/smtpd[16035]: lost connection after DATA from unknown[197.1.247.143]
+Sep 26 23:09:27 v0022 postfix/smtpd[16035]: disconnect from unknown[197.1.247.143]
+Sep 26 23:12:47 v0022 postfix/anvil[16037]: statistics: max connection rate 1/60s for (smtp:197.1.247.143) at Sep 26 23:09:24
+Sep 26 23:12:47 v0022 postfix/anvil[16037]: statistics: max connection count 1 for (smtp:197.1.247.143) at Sep 26 23:09:24
+Sep 26 23:12:47 v0022 postfix/anvil[16037]: statistics: max cache size 1 at Sep 26 23:09:24
+Sep 26 23:34:00 v0022 postfix/smtpd[16057]: warning: hostname 186-60-139-101.speedy.com.ar does not resolve to address 186.60.139.101: Name or service not known
+Sep 26 23:34:00 v0022 postfix/smtpd[16057]: connect from unknown[186.60.139.101]
+Sep 26 23:34:01 v0022 postfix/smtpd[16057]: NOQUEUE: reject: RCPT from unknown[186.60.139.101]: 550 5.1.1 <uheussne@etel-tuning.de>: Recipient address rejected: User unknown in virtual mailbox table; from=<uheussne@etel-tuning.de> to=<uheussne@etel-tuning.de> proto=ESMTP helo=<186-60-139-101.speedy.com.ar>
+Sep 26 23:34:01 v0022 postfix/smtpd[16057]: lost connection after DATA from unknown[186.60.139.101]
+Sep 26 23:34:01 v0022 postfix/smtpd[16057]: disconnect from unknown[186.60.139.101]
+Sep 26 23:34:16 v0022 dovecot: auth-worker(16065): mysql(localhost): Connected to database postfixdb
+Sep 26 23:34:16 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=16067, TLS, session=<io7Zrf4D9QAu34AI>
+Sep 26 23:34:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 26 23:37:21 v0022 postfix/anvil[16059]: statistics: max connection rate 1/60s for (smtp:186.60.139.101) at Sep 26 23:34:00
+Sep 26 23:37:21 v0022 postfix/anvil[16059]: statistics: max connection count 1 for (smtp:186.60.139.101) at Sep 26 23:34:00
+Sep 26 23:37:21 v0022 postfix/anvil[16059]: statistics: max cache size 1 at Sep 26 23:34:00
+Sep 27 00:04:17 v0022 dovecot: auth-worker(16113): mysql(localhost): Connected to database postfixdb
+Sep 27 00:04:17 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=16115, TLS, session=<110mGf8DnAAu34AI>
+Sep 27 00:04:54 v0022 dovecot: imap(stegerpa@etel-tuning.de): Disconnected: Logged out in=530 out=3832
+Sep 27 00:22:21 v0022 dovecot: auth-worker(16161): mysql(localhost): Connected to database postfixdb
+Sep 27 00:22:21 v0022 dovecot: imap-login: Login: user=<stegerpa@etel-tuning.de>, method=PLAIN, rip=46.223.128.8, lip=31.47.250.227, mpid=16163, TLS, session=<x8bNWf8DUgAu34AI>
+Sep 27 00:23:17 v0022 postfix/smtpd[16164]: warning: hostname adsl.viettel.vn does not resolve to address 115.77.143.198: Name or service not known
+Sep 27 00:23:17 v0022 postfix/smtpd[16164]: connect from unknown[115.77.143.198]
+Sep 27 00:23:20 v0022 postfix/smtpd[16164]: NOQUEUE: reject: RCPT from unknown[115.77.143.198]: 550 5.1.1 <le@etel-tuning.de>: Recipient address rejected: User unknown in virtual mailbox table; from=<> to=<le@etel-tuning.de> proto=SMTP helo=<115.77.143.198>
+Sep 27 00:23:20 v0022 postfix/smtpd[16164]: lost connection after RCPT from unknown[115.77.143.198]
+Sep 27 00:23:20 v0022 postfix/smtpd[16164]: disconnect from unknown[115.77.143.198]
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pickup[18750]: 03CD41C74: uid=8 from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/cleanup[7509]: 03CD41C74: message-id=<02109NTPHY40T00P@test-correo.com>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 03CD41C74: from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, size=1764, nrcpt=1 (queue active)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7513]: D3EF21C68: to=<bells-fax-out@test-correo.com>, relay=eBSL_flt, delay=0.15, delays=0/0/0/0.15, dsn=2.0.0, status=sent (delivered via eBSL_flt service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: D3EF21C68: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 dovecot: lda(genesys-copy-email): msgid=<02109NTPHY40T00P@test-correo.com>: saved mail to outbound.processed
+Feb  9 11:54:36 srvdstpdvlsbf01 eBSL_mbx(3257): Saved message in mailbox "genesys-copy-email" folder "outbound.processed"
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7543]: 03CD41C74: to=<email.outbound.processed@copy>, relay=eBSL_mbx, delay=0.04, delays=0.01/0/0/0.03, dsn=2.0.0, status=sent (delivered via eBSL_mbx service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 03CD41C74: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/smtpd[3360]: connect from srvhubivwse01.sandefri.santanderde.corp[180.82.33.14]
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/smtpd[3360]: 6B25B1C72: client=srvhubivwse01.sandefri.santanderde.corp[180.82.33.14]
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/cleanup[7509]: 6B25B1C72: message-id=<02109NTPHY40T00P@test-correo.com>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 6B25B1C72: from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, size=2104, nrcpt=1 (queue active)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/smtp[3165]: ECB961C73: to=<bells-fax-out@test-correo.com>, relay=smtp-pre.santanderde.pre.corp[180.82.32.16]:25, delay=0.48, delays=0.01/0.02/0.04/0.41, dsn=2.6.0, status=sent (250 2.6.0 <02109NTPHY40T00P@test-correo.com> [InternalId=42432] Queued mail for delivery)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: ECB961C73: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/smtpd[3360]: disconnect from srvhubivwse01.sandefri.santanderde.corp[180.82.33.14]
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pickup[18750]: 77CEE1C74: uid=8 from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/cleanup[7509]: 77CEE1C74: message-id=<02109NTPHY40T00P@test-correo.com>
+Feb  9 11:54:36 srvdstpdvlsbf01 eBSL_flt(3364): Processing message with Mimelet "fax/inbound" suspended (MIMELETBASEURL is "PASSTHROUGH"), copying message as-is
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 77CEE1C74: from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, size=2374, nrcpt=1 (queue active)
+Feb  9 11:54:36 srvdstpdvlsbf01 dovecot: lda(genesys-copy-fax): msgid=<02109NTPHY40T00P@test-correo.com>: saved mail to inbound.accepted
+Feb  9 11:54:36 srvdstpdvlsbf01 eBSL_mbx(3378): Saved message in mailbox "genesys-copy-fax" folder "inbound.accepted"
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7531]: 77CEE1C74: to=<fax.inbound.accepted@copy>, relay=eBSL_mbx, delay=0.04, delays=0.01/0/0/0.03, dsn=2.0.0, status=sent (delivered via eBSL_mbx service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 77CEE1C74: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pickup[18750]: 82F771C75: uid=8 from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/cleanup[7509]: 82F771C75: message-id=<02109NTPHY40T00P@test-correo.com>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 82F771C75: from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, size=2225, nrcpt=1 (queue active)
+Feb  9 11:54:36 srvdstpdvlsbf01 dovecot: lda(genesys-routing-fax): msgid=<02109NTPHY40T00P@test-correo.com>: saved mail to INBOX
+Feb  9 11:54:36 srvdstpdvlsbf01 eBSL_mbx(3388): Saved message in mailbox "genesys-routing-fax"
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7543]: 82F771C75: to=<fax@routing>, relay=eBSL_mbx, delay=0.04, delays=0.01/0/0/0.03, dsn=2.0.0, status=sent (delivered via eBSL_mbx service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 82F771C75: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pickup[18750]: 8EB0A1C76: uid=8 from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/cleanup[7509]: 8EB0A1C76: message-id=<02109NTPHY40T00P@test-correo.com>
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 8EB0A1C76: from=<email.out.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, size=2335, nrcpt=1 (queue active)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7513]: 6B25B1C72: to=<fax.in.eminar@srvdstpdvlsbf01.santanderde.dev.corp>, relay=eBSL_flt, delay=0.15, delays=0/0/0/0.14, dsn=2.0.0, status=sent (delivered via eBSL_flt service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 6B25B1C72: removed
+Feb  9 11:54:36 srvdstpdvlsbf01 dovecot: lda(genesys-copy-fax): msgid=<02109NTPHY40T00P@test-correo.com>: saved mail to inbound.processed
+Feb  9 11:54:36 srvdstpdvlsbf01 eBSL_mbx(3413): Saved message in mailbox "genesys-copy-fax" folder "inbound.processed"
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/pipe[7531]: 8EB0A1C76: to=<fax.inbound.processed@copy>, relay=eBSL_mbx, delay=0.04, delays=0.01/0/0/0.02, dsn=2.0.0, status=sent (delivered via eBSL_mbx service)
+Feb  9 11:54:36 srvdstpdvlsbf01 postfix/qmgr[18751]: 8EB0A1C76: removed
+Sep  4 19:27:22 magnesium postfix/qmgr[1989]: 0DDB15405B2: from=<mkh.730296@sys.yzk.co.jp>, size=43635, nrcpt=1 (queue active)
+Sep  4 19:27:27 magnesium postfix/smtp[30836]: 0DDB15405B2: to=<takashiyamazono@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=5.4, delays=0.21/0/2.7/2.5, dsn=2.0.0, status=sent (250 2.0.0 OK 1378270899 uw6sm26394353pbc.8 - gsmtp)
+Sep  4 19:27:27 magnesium postfix/qmgr[1989]: 0DDB15405B2: removed
+Sep  4 19:30:03 magnesium postfix/smtpd[30837]: error: open database /etc/aliases.db: No such file or directory
+Sep  4 19:30:03 magnesium postfix/smtpd[30837]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  4 19:30:03 magnesium postfix/smtpd[30837]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:30:03 magnesium postfix/smtpd[30837]: 7F9A65405B2: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:30:03 magnesium postfix/cleanup[30840]: 7F9A65405B2: message-id=<96E3386CD28342FD88C17552BCCB506C@N1169>
+Sep  4 19:30:03 magnesium postfix/smtpd[30837]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:30:03 magnesium postfix/qmgr[1989]: 7F9A65405B2: from=<nakashima@mertex.co.id>, size=12723, nrcpt=1 (queue active)
+Sep  4 19:30:03 magnesium postfix/smtp[30841]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:30:08 magnesium postfix/smtp[30841]: 7F9A65405B2: to=<k_krauz406@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=5, delays=0.08/0.01/2.6/2.3, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271061 wp8sm26382830pbc.26 - gsmtp)
+Sep  4 19:30:08 magnesium postfix/qmgr[1989]: 7F9A65405B2: removed
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: error: open database /etc/aliases.db: No such file or directory
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: connect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: CA7975405B2: client=phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:33:09 magnesium postfix/cleanup[30845]: CA7975405B2: message-id=<3544C962C84B4A1B935456A264BDF94B@takasanPC>
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: disconnect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:33:09 magnesium postfix/qmgr[1989]: CA7975405B2: from=<kousyu0317@wh.commufa.jp>, size=6250, nrcpt=1 (queue active)
+Sep  4 19:33:09 magnesium postfix/smtp[30846]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:33:09 magnesium postfix/smtpd[30842]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/smtpd[30842]: 1E1C7540735: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/cleanup[30845]: 1E1C7540735: message-id=<0404C1F88EC641AF8FB368F37DA4246A@wsz4pc1102>
+Sep  4 19:33:10 magnesium postfix/smtpd[30842]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/qmgr[1989]: 1E1C7540735: from=<wsz.73fck12@sys.yzk.co.jp>, size=6118, nrcpt=1 (queue active)
+Sep  4 19:33:10 magnesium postfix/smtp[30847]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:33:10 magnesium postfix/smtpd[30842]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/smtpd[30842]: 5095A5407A7: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/cleanup[30845]: 5095A5407A7: message-id=<96E821B4DF0D5849A5744361FFF3497B0112F591@SMBXQX003.corp.garuda-indonesia.com>
+Sep  4 19:33:10 magnesium postfix/smtpd[30842]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:10 magnesium postfix/qmgr[1989]: 5095A5407A7: from=<gff.mileagestatement@garuda-indonesia.com>, size=21372, nrcpt=1 (queue active)
+Sep  4 19:33:10 magnesium postfix/smtp[30848]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:33:10 magnesium postfix/smtp[30848]: connect to smtp.gmail.com[2a00:1450:4010:c04::6c]:587: Network is unreachable
+Sep  4 19:33:14 magnesium postfix/smtp[30846]: CA7975405B2: to=<tanishi38158@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=5.1, delays=0.03/0.01/2.8/2.3, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271247 it15sm19984216pbd.31 - gsmtp)
+Sep  4 19:33:15 magnesium postfix/qmgr[1989]: CA7975405B2: removed
+Sep  4 19:33:15 magnesium postfix/smtp[30848]: 5095A5407A7: to=<tanishi38158@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.108]:587, delay=4.8, delays=0.09/0.01/2.5/2.2, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271247 ef10sm28283346pac.1 - gsmtp)
+Sep  4 19:33:15 magnesium postfix/qmgr[1989]: 5095A5407A7: removed
+Sep  4 19:33:15 magnesium postfix/smtp[30847]: 1E1C7540735: to=<tanishi38158@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=5.3, delays=0.17/0.01/2.8/2.3, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271247 ve9sm26411219pbc.19 - gsmtp)
+Sep  4 19:33:15 magnesium postfix/qmgr[1989]: 1E1C7540735: removed
+Sep  4 19:33:57 magnesium postfix/smtpd[30842]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:57 magnesium postfix/smtpd[30842]: E24C25405B2: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:57 magnesium postfix/cleanup[30845]: E24C25405B2: message-id=<e48f0016-1c2a-4597-afa7-041998315c32@xtinmta468.xt.local>
+Sep  4 19:33:57 magnesium postfix/smtpd[30842]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:33:57 magnesium postfix/qmgr[1989]: E24C25405B2: from=<bounce-1243494_HTML-808174169-18943828-83545-339@bounce.reply.agoda-rewards.com>, size=20090, nrcpt=1 (queue active)
+Sep  4 19:34:03 magnesium postfix/smtp[30846]: E24C25405B2: to=<masakawamti@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=5.6, delays=0.06/0/3.1/2.5, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271296 xl3sm26415767pbb.17 - gsmtp)
+Sep  4 19:34:03 magnesium postfix/qmgr[1989]: E24C25405B2: removed
+Sep  4 19:35:28 magnesium postfix/smtpd[30842]: connect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:35:28 magnesium postfix/smtpd[30842]: 904255405B2: client=phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:35:28 magnesium postfix/cleanup[30845]: 904255405B2: message-id=<e2620d59-9aa7-4442-9476-9dc4bc891d93@xtinmta187.xt.local>
+Sep  4 19:35:28 magnesium postfix/smtpd[30842]: disconnect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:35:28 magnesium postfix/qmgr[1989]: 904255405B2: from=<bounce-1243494_HTML-977322096-18943828-83545-534@bounce.reply.agoda-rewards.com>, size=20050, nrcpt=1 (queue active)
+Sep  4 19:35:33 magnesium postfix/smtp[30846]: 904255405B2: to=<chada1918@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.108]:587, delay=5, delays=0.03/0/2.7/2.3, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271386 bt1sm26440478pbb.2 - gsmtp)
+Sep  4 19:35:33 magnesium postfix/qmgr[1989]: 904255405B2: removed
+Sep  4 19:38:44 magnesium postfix/smtpd[30850]: error: open database /etc/aliases.db: No such file or directory
+Sep  4 19:38:44 magnesium postfix/smtpd[30850]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  4 19:38:44 magnesium postfix/smtpd[30850]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:38:44 magnesium postfix/smtpd[30850]: 253705405B2: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:38:44 magnesium postfix/cleanup[30853]: 253705405B2: message-id=<OF9342940A.BF813A94-ON49257BDC.001BD5E5-49257BDC.001BD5E8@shikibo.co.jp>
+Sep  4 19:38:44 magnesium postfix/smtpd[30850]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:38:44 magnesium postfix/qmgr[1989]: 253705405B2: from=<y-numata@shikibo.co.jp>, size=6105, nrcpt=1 (queue active)
+Sep  4 19:38:44 magnesium postfix/smtp[30854]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:38:49 magnesium postfix/smtp[30854]: 253705405B2: to=<k_krauz406@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.108]:587, delay=5.2, delays=0.06/0.01/2.6/2.5, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271581 tz3sm26438348pbc.20 - gsmtp)
+Sep  4 19:38:49 magnesium postfix/qmgr[1989]: 253705405B2: removed
+Sep  4 19:39:59 magnesium postfix/smtpd[30850]: connect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:39:59 magnesium postfix/smtpd[30850]: 343A95405B2: client=unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:39:59 magnesium postfix/cleanup[30853]: 343A95405B2: message-id=<WorldClient-F201309041144.AA44426115@sai.co.id>
+Sep  4 19:39:59 magnesium postfix/qmgr[1989]: 343A95405B2: from=<dikky@sai.co.id>, size=238560, nrcpt=1 (queue active)
+Sep  4 19:39:59 magnesium postfix/smtpd[30850]: disconnect from unicorn.sby.dnet.net.id[202.148.11.52]
+Sep  4 19:40:05 magnesium postfix/smtp[30854]: 343A95405B2: to=<surabaya1201@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.108]:587, delay=6.7, delays=0.24/0/2.5/4, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271658 lm2sm28314565pab.2 - gsmtp)
+Sep  4 19:40:06 magnesium postfix/qmgr[1989]: 343A95405B2: removed
+Sep  4 19:42:23 magnesium postfix/smtpd[30855]: error: open database /etc/aliases.db: No such file or directory
+Sep  4 19:42:23 magnesium postfix/smtpd[30855]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  4 19:42:23 magnesium postfix/smtpd[30855]: connect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:42:23 magnesium postfix/smtpd[30855]: 646615405B2: client=phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:42:23 magnesium postfix/cleanup[30858]: 646615405B2: message-id=<002a01cea92d$8a672100$9f356300$@sys.yzk.co.jp>
+Sep  4 19:42:23 magnesium postfix/smtpd[30855]: disconnect from phoenix.sby.dnet.net.id[202.148.11.54]
+Sep  4 19:42:23 magnesium postfix/qmgr[1989]: 646615405B2: from=<mkh.730296@sys.yzk.co.jp>, size=7770, nrcpt=1 (queue active)
+Sep  4 19:42:23 magnesium postfix/smtp[30859]: warning: database /etc/postfix/sasl_passwd.db is older than source file /etc/postfix/sasl_passwd
+Sep  4 19:42:23 magnesium postfix/smtp[30859]: connect to smtp.gmail.com[2a00:1450:4010:c04::6d]:587: Network is unreachable
+Sep  4 19:42:51 magnesium postfix/smtp[30859]: 646615405B2: to=<takayuki1727@yahoo.co.jp>, relay=smtp.gmail.com[74.125.129.109]:587, delay=28, delays=0.03/0.01/26/2.4, dsn=2.0.0, status=sent (250 2.0.0 OK 1378271823 xn12sm28304370pac.12 - gsmtp)
+Sep  4 19:42:51 magnesium postfix/qmgr[1989]: 646615405B2: removed
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: error: open database /etc/aliases.db: No such file or directory
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: connect from 1-164-182-167.dynamic.hinet.net[1.164.182.167]
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: NOQUEUE: reject: RCPT from 1-164-182-167.dynamic.hinet.net[1.164.182.167]: 554 5.7.1 <vkihwpdh@yahoo.com.tw>: Relay access denied; from=<z2007tw@yahoo.com.tw> to=<vkihwpdh@yahoo.com.tw> proto=SMTP helo=<202.148.11.55>
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: lost connection after RCPT from 1-164-182-167.dynamic.hinet.net[1.164.182.167]
+Sep  4 20:40:06 magnesium postfix/smtpd[30863]: disconnect from 1-164-182-167.dynamic.hinet.net[1.164.182.167]
+Sep  4 20:43:27 magnesium postfix/anvil[30865]: statistics: max connection rate 1/60s for (smtp:1.164.182.167) at Sep  4 20:40:06
+Sep  4 20:43:27 magnesium postfix/anvil[30865]: statistics: max connection count 1 for (smtp:1.164.182.167) at Sep  4 20:40:06
+Sep  4 20:43:27 magnesium postfix/anvil[30865]: statistics: max cache size 1 at Sep  4 20:40:06
+Sep  5 08:27:50 magnesium postfix/smtpd[31075]: error: open database /etc/aliases.db: No such file or directory
+Sep  5 08:27:50 magnesium postfix/smtpd[31075]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+Sep  5 08:27:50 magnesium postfix/smtpd[31075]: connect from 114-32-207-47.HINET-IP.hinet.net[114.32.207.47]
+Sep  5 08:27:50 magnesium postfix/smtpd[31075]: NOQUEUE: reject: RCPT from 114-32-207-47.HINET-IP.hinet.net[114.32.207.47]: 554 5.7.1 <superedm002@yahoo.com.hk>: Relay access denied; from=<0546@msa.hinet.net> to=<superedm002@yahoo.com.hk> proto=SMTP helo=<202.148.11.55>
+Sep  5 08:27:51 magnesium postfix/smtpd[31075]: lost connection after RCPT from 114-32-207-47.HINET-IP.hinet.net[114.32.207.47]
+Sep  5 08:27:51 magnesium postfix/smtpd[31075]: disconnect from 114-32-207-47.HINET-IP.hinet.net[114.32.207.47]
+Sep  5 08:31:11 magnesium postfix/anvil[31077]: statistics: max connection rate 1/60s for (smtp:114.32.207.47) at Sep  5 08:27:50
+Sep  5 08:31:11 magnesium postfix/anvil[31077]: statistics: max connection count 1 for (smtp:114.32.207.47) at Sep  5 08:27:50
+Sep  5 08:31:11 magnesium postfix/anvil[31077]: statistics: max cache size 1 at Sep  5 08:27:50
+May 16 18:18:14 mail postfix/qmgr[2089]: 6027E23FE4C: from=<www@molom.se>, size=1460, nrcpt=1 (queue active)
+May 16 18:18:14 mail postfix/qmgr[2089]: 1C8E723FE40: from=<www@molom.se>, size=1490, nrcpt=1 (queue active)
+May 16 18:18:17 mail postfix/smtpd[9944]: connect from localhost[127.0.0.1]
+May 16 18:18:17 mail postfix/smtp[9941]: connect to mx2.hotmail.com[65.55.37.104]:25: No route to host
+May 16 18:18:26 mail postfix/smtpd[9944]: disconnect from localhost[127.0.0.1]
+May 16 18:18:44 mail postfix/smtp[9942]: connect to gmail-smtp-in.l.google.com[209.85.173.27]:25: Connection timed out
+May 16 18:18:46 mail postfix/smtpd[9944]: connect from localhost[127.0.0.1]
+May 16 18:18:46 mail postfix/smtpd[9944]: 4ACCF23FDB6: client=localhost[127.0.0.1], sasl_method=LOGIN, sasl_username=www@molom.se
+May 16 18:18:47 mail postfix/smtp[9941]: connect to mx1.hotmail.com[65.55.37.120]:25: Connection timed out
+May 16 18:18:47 mail postfix/cleanup[9959]: 4ACCF23FDB6: message-id=<0d7656a9390e8ac1699c9b3c9c6d2172@molom.se>
+May 16 18:18:47 mail postfix/qmgr[2089]: 4ACCF23FDB6: from=<www@molom.se>, size=621, nrcpt=1 (queue active)
+May 16 18:18:47 mail roundcube: User www@molom.se [62.220.182.131]; Message for exampleadress@gmail.com; 250: 2.0.0 Ok: queued as 4ACCF23FDB6
+May 16 18:18:47 mail amavis[1693]: (01693-02) NOTICE: reconnecting in response to: err=2006, HY000, DBD::mysql::st execute failed: MySQL server has gone away at (eval 105) line 166, <GEN36> line 962.
+May 16 18:18:47 mail postfix/smtpd[9944]: disconnect from localhost[127.0.0.1]
+May 16 18:18:52 mail postfix/smtpd[9980]: connect from localhost[127.0.0.1]
+May 16 18:18:52 mail postfix/smtpd[9980]: 0D83C23FE4E: client=localhost[127.0.0.1]
+May 16 18:18:52 mail postfix/cleanup[9959]: 0D83C23FE4E: message-id=<0d7656a9390e8ac1699c9b3c9c6d2172@molom.se>
+May 16 18:18:52 mail postfix/qmgr[2089]: 0D83C23FE4E: from=<www@molom.se>, size=1554, nrcpt=1 (queue active)
+May 16 18:18:52 mail postfix/smtpd[9980]: disconnect from localhost[127.0.0.1]
+May 16 18:18:52 mail amavis[1693]: (01693-02) Passed CLEAN, MYNETS/MYUSERS LOCAL [127.0.0.1] [127.0.0.1] <www@molom.se> -> <exampleadress@gmail.com>, Message-ID: <0d7656a9390e8ac1699c9b3c9c6d2172@molom.se>, mail_id: zwxakHD789KS, Hits: -10, size: 621, queued_as: 0D83C23FE4E, 4583 ms
+May 16 18:18:52 mail postfix/smtp[9965]: 4ACCF23FDB6: to=<exampleadress@gmail.com>, relay=127.0.0.1[127.0.0.1]:10024, delay=6.2, delays=1.5/0.03/0/4.7, dsn=2.0.0, status=sent (250 2.0.0 from MTA([127.0.0.1]:10025): 250 2.0.0 Ok: queued as 0D83C23FE4E)
+May 16 18:18:52 mail postfix/qmgr[2089]: 4ACCF23FDB6: removed
+May 16 18:19:13 mail postfix/smtp[9981]: connect to gmail-smtp-in.l.google.com[209.85.173.27]:25: No route to host
+May 16 18:19:14 mail postfix/smtp[9942]: connect to alt1.gmail-smtp-in.l.google.com[173.194.77.26]:25: Connection timed out
+May 16 18:19:17 mail postfix/smtp[9941]: connect to mx4.hotmail.com[65.54.188.94]:25: Connection timed out
+May 16 18:19:43 mail postfix/smtp[9981]: connect to alt1.gmail-smtp-in.l.google.com[173.194.77.27]:25: Connection timed out
+May 16 18:19:44 mail postfix/smtp[9942]: connect to alt2.gmail-smtp-in.l.google.com[209.85.225.26]:25: Connection timed out
+May 16 18:19:47 mail postfix/smtp[9941]: connect to mx2.hotmail.com[65.55.37.120]:25: Connection timed out
+May 16 18:20:13 mail postfix/smtp[9981]: connect to alt2.gmail-smtp-in.l.google.com[209.85.225.27]:25: Connection timed out
+May 16 18:20:14 mail postfix/smtp[9942]: connect to alt3.gmail-smtp-in.l.google.com[74.125.130.26]:25: Connection timed out
+May 16 18:20:17 mail postfix/smtp[9941]: connect to mx4.hotmail.com[65.55.37.72]:25: Connection timed out
+May 16 18:20:17 mail postfix/smtp[9941]: 6027E23FE4C: to=<zipstero1337@hotmail.com>, relay=none, delay=65965, delays=65842/0.05/123/0, dsn=4.4.1, status=deferred (connect to mx4.hotmail.com[65.55.37.72]:25: Connection timed out)
+May 16 18:20:43 mail postfix/smtp[9981]: connect to alt3.gmail-smtp-in.l.google.com[74.125.130.27]:25: Connection timed out
+May 16 18:20:43 mail postfix/smtp[9981]: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.27]:25: No route to host
+May 16 18:20:43 mail postfix/smtp[9981]: 0D83C23FE4E: to=<exampleadress@gmail.com>, relay=none, delay=111, delays=0.08/0.03/111/0, dsn=4.4.1, status=deferred (connect to alt4.gmail-smtp-in.l.google.com[173.194.76.27]:25: No route to host)
+May 16 18:20:44 mail postfix/smtp[9942]: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.27]:25: Connection timed out
+May 16 18:20:44 mail postfix/smtp[9942]: 1C8E723FE40: to=<exampleadress@gmail.com>, relay=none, delay=74015, delays=73865/0.02/150/0, dsn=4.4.1, status=deferred (connect to alt4.gmail-smtp-in.l.google.com[173.194.76.27]:25: Connection timed out)
+May 16 18:25:40 mail postfix/smtpd[10104]: connect from localhost[127.0.0.1]
+May 16 18:25:52 mail postfix/smtpd[10104]: disconnect from localhost[127.0.0.1]
+May 16 18:26:37 mail postfix/smtpd[10104]: connect from localhost[127.0.0.1]
+May 16 18:27:52 mail postfix/smtpd[10104]: 495B223FDB6: client=localhost[127.0.0.1]
+May 16 18:28:14 mail postfix/cleanup[10120]: 495B223FDB6: message-id=<20120516162752.495B223FDB6@mail.molom.se>
+May 16 18:28:14 mail postfix/qmgr[2089]: 495B223FDB6: from=<penis@bajs.nu>, size=343, nrcpt=1 (queue active)
+May 16 18:28:14 mail postfix/qmgr[2089]: 00F2B23FE4D: from=<www@molom.se>, size=1563, nrcpt=1 (queue active)
+May 16 18:28:14 mail postfix/qmgr[2089]: 0D83C23FE4E: from=<www@molom.se>, size=1554, nrcpt=1 (queue active)
+May 16 18:28:14 mail postfix/smtpd[10134]: connect from localhost[127.0.0.1]
+May 16 18:28:14 mail postfix/smtpd[10134]: D9B2123FE4F: client=localhost[127.0.0.1]
+May 16 18:28:14 mail postfix/cleanup[10120]: D9B2123FE4F: message-id=<20120516162752.495B223FDB6@mail.molom.se>
+May 16 18:28:14 mail postfix/qmgr[2089]: D9B2123FE4F: from=<penis@bajs.nu>, size=800, nrcpt=1 (queue active)
+May 16 18:28:14 mail postfix/smtpd[10134]: disconnect from localhost[127.0.0.1]
+May 16 18:28:15 mail amavis[1694]: (01694-03) Passed CLEAN, MYNETS LOCAL [127.0.0.1] [127.0.0.1] <penis@bajs.nu> -> <exampleadress@gmail.com>, Message-ID: <20120516162752.495B223FDB6@mail.molom.se>, mail_id: I5fx4w2DWBsZ, Hits: -5.923, size: 343, queued_as: D9B2123FE4F, 839 ms
+May 16 18:28:15 mail postfix/smtp[10129]: 495B223FDB6: to=<exampleadress@gmail.com>, relay=127.0.0.1[127.0.0.1]:10024, delay=41, delays=40/0.03/0.01/0.93, dsn=2.0.0, status=sent (250 2.0.0 from MTA([127.0.0.1]:10025): 250 2.0.0 Ok: queued as D9B2123FE4F)
+May 16 18:28:15 mail postfix/qmgr[2089]: 495B223FDB6: removed
+May 16 18:28:19 mail postfix/smtpd[10104]: disconnect from localhost[127.0.0.1]
+May 16 18:28:24 mail postfix/smtp[10135]: connect to gmail-smtp-in.l.google.com[209.85.173.26]:25: No route to host
+May 16 18:28:44 mail postfix/smtp[10130]: connect to gmail-smtp-in.l.google.com[209.85.173.26]:25: Connection timed out
+May 16 18:28:44 mail postfix/smtp[10131]: connect to gmail-smtp-in.l.google.com[209.85.173.26]:25: Connection timed out
+May 16 18:28:54 mail postfix/smtp[10135]: connect to alt1.gmail-smtp-in.l.google.com[173.194.77.27]:25: Connection timed out
+May 16 18:29:14 mail postfix/smtp[10130]: connect to alt1.gmail-smtp-in.l.google.com[173.194.77.27]:25: Connection timed out
+May 16 18:29:14 mail postfix/smtp[10131]: connect to alt1.gmail-smtp-in.l.google.com[173.194.77.27]:25: Connection timed out
+May 16 18:29:24 mail postfix/smtp[10135]: connect to alt2.gmail-smtp-in.l.google.com[209.85.225.27]:25: Connection timed out
+May 16 18:29:44 mail postfix/smtp[10131]: connect to alt2.gmail-smtp-in.l.google.com[209.85.225.27]:25: Connection timed out
+May 16 18:29:44 mail postfix/smtp[10130]: connect to alt2.gmail-smtp-in.l.google.com[209.85.225.27]:25: Connection timed out
+May 16 18:29:54 mail postfix/smtp[10135]: connect to alt3.gmail-smtp-in.l.google.com[74.125.130.27]:25: Connection timed out
+May 16 18:30:14 mail postfix/smtp[10130]: connect to alt3.gmail-smtp-in.l.google.com[74.125.130.27]:25: Connection timed out
+May 16 18:30:14 mail postfix/smtp[10131]: connect to alt3.gmail-smtp-in.l.google.com[74.125.130.27]:25: Connection timed out
+May 16 18:30:24 mail postfix/smtp[10135]: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out
+May 16 18:30:24 mail postfix/smtp[10135]: D9B2123FE4F: to=<exampleadress@gmail.com>, relay=none, delay=129, delays=0.1/0.02/129/0, dsn=4.4.1, status=deferred (connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out)
+May 16 18:30:44 mail postfix/smtp[10130]: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out
+May 16 18:30:44 mail postfix/smtp[10131]: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out
+May 16 18:30:44 mail postfix/smtp[10130]: 00F2B23FE4D: to=<exampleadress@gmail.com>, relay=none, delay=2008, delays=1858/0.02/150/0, dsn=4.4.1, status=deferred (connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out)
+May 16 18:30:44 mail postfix/smtp[10131]: 0D83C23FE4E: to=<exampleadress@gmail.com>, relay=none, delay=712, delays=562/0.05/150/0, dsn=4.4.1, status=deferred (connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out)
+May 16 18:33:14 mail postfix/qmgr[2089]: A416E23FE4A: from=<>, size=1639, nrcpt=1 (queue active)
+May 16 18:33:14 mail postfix/error[10191]: A416E23FE4A: to=<exampleadress@gmail.com>, relay=none, delay=67684, delays=67684/0.1/0/0.1, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to alt4.gmail-smtp-in.l.google.com[173.194.76.26]:25: Connection timed out)
+Sep 17 16:08:26 www1 postfix/smtpd[11015]: NOQUEUE: reject: RCPT from unknown[83.66.193.94]: 554 5.7.1 Service unavailable; Client host [83.66.193.94] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mx.selfip.biz (NiX Spam) as spamming at Mon, 17 Sep 2012 08:53:55 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=83.66.193.94; from=<D38E298@oruga.com.co> to=<3f098936@websnapr.com> proto=ESMTP helo=<[83.66.193.94]>
+Sep 17 16:08:26 www1 postfix/smtpd[11015]: disconnect from unknown[83.66.193.94]
+Sep 17 16:08:30 www1 postfix/smtpd[11014]: connect from 19.19.216.87.static.jazztel.es[87.216.19.19]
+Sep 17 16:08:30 www1 postfix/local[8652]: 1B3CF22DDCC: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=775469, delays=214824/560589/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:08:30 www1 postfix/qmgr[8169]: 1B3CF22DDCC: removed
+Sep 17 16:08:30 www1 postfix/qmgr[8169]: 7598A22C753: from=<root@www1.domain.de>, size=926, nrcpt=1 (queue active)
+Sep 17 16:08:31 www1 postfix/smtpd[10916]: connect from 244.Red-83-58-61.dynamicIP.rima-tde.net[83.58.61.244]
+Sep 17 16:08:31 www1 postfix/smtpd[10916]: disconnect from 244.Red-83-58-61.dynamicIP.rima-tde.net[83.58.61.244]
+Sep 17 16:08:32 www1 postfix/smtpd[11015]: connect from dslb-088-077-169-110.pools.arcor-ip.net[88.77.169.110]
+Sep 17 16:08:32 www1 postfix/smtpd[11014]: NOQUEUE: reject: RCPT from 19.19.216.87.static.jazztel.es[87.216.19.19]: 554 5.7.1 Service unavailable; Client host [87.216.19.19] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mx.selfip.biz (NiX Spam) as spamming at Mon, 17 Sep 2012 09:50:48 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=87.216.19.19; from=<Adeben.Riddlebarger@hydrive.com.au> to=<albemlowah@popuri.us> proto=ESMTP helo=<19.19.216.87.static.jazztel.es>
+Sep 17 16:08:32 www1 postfix/smtpd[11015]: disconnect from dslb-088-077-169-110.pools.arcor-ip.net[88.77.169.110]
+Sep 17 16:08:32 www1 postfix/smtpd[11014]: lost connection after DATA (0 bytes) from 19.19.216.87.static.jazztel.es[87.216.19.19]
+Sep 17 16:08:32 www1 postfix/smtpd[11014]: disconnect from 19.19.216.87.static.jazztel.es[87.216.19.19]
+Sep 17 16:08:34 www1 postfix/smtpd[10916]: warning: 190.174.239.199: hostname 190-174-239-199.speedy.com.ar verification failed: Name or service not known
+Sep 17 16:08:34 www1 postfix/smtpd[10916]: connect from unknown[190.174.239.199]
+Sep 17 16:08:35 www1 postfix/smtpd[10916]: disconnect from unknown[190.174.239.199]
+Sep 17 16:08:39 www1 postfix/smtpd[11015]: connect from unknown[114.143.53.148]
+Sep 17 16:08:40 www1 postfix/local[6268]: AF35A1307BE: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=599439, delays=38785/560598/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:08:40 www1 postfix/qmgr[8169]: AF35A1307BE: removed
+Sep 17 16:08:40 www1 postfix/qmgr[8169]: C5A5E12D409: from=<root@www1.domain.de>, size=526, nrcpt=1 (queue active)
+Sep 17 16:08:40 www1 postfix/smtpd[11015]: NOQUEUE: reject: RCPT from unknown[114.143.53.148]: 554 5.7.1 Service unavailable; Client host [114.143.53.148] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mx.selfip.biz (NiX Spam) as spamming at Mon, 17 Sep 2012 10:34:42 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=114.143.53.148; from=<0253235@lesstof.nl> to=<21796d4ca@websnapr.com> proto=ESMTP helo=<[114.143.53.138]>
+Sep 17 16:08:40 www1 postfix/smtpd[11015]: disconnect from unknown[114.143.53.148]
+Sep 17 16:08:44 www1 postfix/smtpd[11014]: connect from c-98-218-172-101.hsd1.va.comcast.net[98.218.172.101]
+Sep 17 16:08:44 www1 postfix/smtpd[11014]: disconnect from c-98-218-172-101.hsd1.va.comcast.net[98.218.172.101]
+Sep 17 16:08:46 www1 postfix/smtpd[11015]: connect from adsl-074-239-147-055.sip.bgk.bellsouth.net[74.239.147.55]
+Sep 17 16:08:46 www1 postfix/smtpd[11015]: disconnect from adsl-074-239-147-055.sip.bgk.bellsouth.net[74.239.147.55]
+Sep 17 16:08:48 www1 postfix/smtpd[11014]: connect from unknown[117.223.34.253]
+Sep 17 16:08:49 www1 postfix/smtpd[11014]: disconnect from unknown[117.223.34.253]
+Sep 17 16:08:56 www1 postfix/smtpd[10916]: warning: 14.96.72.229: hostname Static-229.72.96.14.tataidc.co.in verification failed: Name or service not known
+Sep 17 16:08:56 www1 postfix/smtpd[10916]: connect from unknown[14.96.72.229]
+Sep 17 16:08:57 www1 postfix/smtpd[10916]: disconnect from unknown[14.96.72.229]
+Sep 17 16:09:00 www1 postfix/smtpd[11015]: connect from 122-149-227-7.static.dsl.dodo.com.au[122.149.227.7]
+Sep 17 16:09:01 www1 postfix/pickup[10235]: B61B122DDCC: uid=0 from=<root>
+Sep 17 16:09:01 www1 postfix/cleanup[9472]: B61B122DDCC: message-id=<20120917140901.B61B122DDCC@www1.domain.de>
+Sep 17 16:09:01 www1 postfix/pickup[10235]: D2D7514A7BD: uid=0 from=<root>
+Sep 17 16:09:01 www1 postfix/cleanup[8933]: D2D7514A7BD: message-id=<20120917140901.D2D7514A7BD@www1.domain.de>
+Sep 17 16:09:01 www1 postfix/smtpd[11015]: disconnect from 122-149-227-7.static.dsl.dodo.com.au[122.149.227.7]
+Sep 17 16:09:03 www1 postfix/smtpd[11014]: warning: 190.175.84.140: hostname 190-175-84-140.speedy.com.ar verification failed: Name or service not known
+Sep 17 16:09:03 www1 postfix/smtpd[11014]: connect from unknown[190.175.84.140]
+Sep 17 16:09:03 www1 postfix/smtpd[11014]: disconnect from unknown[190.175.84.140]
+Sep 17 16:09:04 www1 postfix/smtpd[10916]: connect from 62.42.94.94.dyn.user.ono.com[62.42.94.94]
+Sep 17 16:09:04 www1 postfix/smtpd[10916]: disconnect from 62.42.94.94.dyn.user.ono.com[62.42.94.94]
+Sep 17 16:09:11 www1 postfix/pickup[10235]: 40AB214A7BF: uid=33 from=<www-data>
+Sep 17 16:09:11 www1 postfix/cleanup[9472]: 40AB214A7BF: message-id=<20120917140911.40AB214A7BF@www1.domain.de>
+Sep 17 16:09:11 www1 postfix/smtpd[11015]: connect from p5B2F74FD.dip.t-dialin.net[91.47.116.253]
+Sep 17 16:09:11 www1 postfix/smtpd[11015]: disconnect from p5B2F74FD.dip.t-dialin.net[91.47.116.253]
+Sep 17 16:09:17 www1 postfix/pickup[10235]: 95D0514A7C0: uid=0 from=<root>
+Sep 17 16:09:17 www1 postfix/cleanup[8933]: 95D0514A7C0: message-id=<20120917140917.95D0514A7C0@www1.domain.de>
+Sep 17 16:09:17 www1 postfix/smtpd[11014]: connect from 148-224-235-201.fibertel.com.ar[201.235.224.148]
+Sep 17 16:09:18 www1 postfix/smtpd[11014]: disconnect from 148-224-235-201.fibertel.com.ar[201.235.224.148]
+Sep 17 16:09:25 www1 postfix/smtpd[10916]: connect from unknown[117.212.160.59]
+Sep 17 16:09:26 www1 postfix/local[6448]: D9E1B12E491: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=652165, delays=91521/560588/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:09:26 www1 postfix/qmgr[8169]: D9E1B12E491: removed
+Sep 17 16:09:26 www1 postfix/qmgr[8169]: B2A5AA2CC9D: from=<root@www1.domain.de>, size=524, nrcpt=1 (queue active)
+Sep 17 16:09:27 www1 postfix/smtpd[10916]: 14DED12E491: client=unknown[117.212.160.59]
+Sep 17 16:09:27 www1 postfix/cleanup[9472]: 14DED12E491: message-id=<20120917193924.59A1E67FB64A4947CC714@MDI-RGJAY-168>
+Sep 17 16:09:27 www1 postfix/smtpd[10916]: disconnect from unknown[117.212.160.59]
+Sep 17 16:09:29 www1 postfix/smtpd[11014]: connect from unknown[78.97.24.26]
+Sep 17 16:09:29 www1 postfix/smtpd[11014]: NOQUEUE: reject: RCPT from unknown[78.97.24.26]: 554 5.7.1 Service unavailable; Client host [78.97.24.26] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mx.selfip.biz (NiX Spam) as spamming at Mon, 17 Sep 2012 15:33:33 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=78.97.24.26; from=<F132B001@mcsv108.net> to=<oingavk@popuri.us> proto=ESMTP helo=<[78.97.24.26]>
+Sep 17 16:09:29 www1 postfix/smtpd[11014]: disconnect from unknown[78.97.24.26]
+Sep 17 16:09:31 www1 postfix/smtpd[10916]: connect from 21.Red-83-32-50.dynamicIP.rima-tde.net[83.32.50.21]
+Sep 17 16:09:31 www1 postfix/smtpd[10916]: disconnect from 21.Red-83-32-50.dynamicIP.rima-tde.net[83.32.50.21]
+Sep 17 16:09:32 www1 postfix/smtpd[11014]: warning: 187.34.141.241: hostname 187-34-141-241.dsl.telesp.net.br verification failed: Name or service not known
+Sep 17 16:09:32 www1 postfix/smtpd[11014]: connect from unknown[187.34.141.241]
+Sep 17 16:09:32 www1 postfix/smtpd[11015]: connect from unknown[50.72.87.7]
+Sep 17 16:09:32 www1 postfix/smtpd[11015]: lost connection after CONNECT from unknown[50.72.87.7]
+Sep 17 16:09:32 www1 postfix/smtpd[11015]: disconnect from unknown[50.72.87.7]
+Sep 17 16:09:33 www1 postfix/smtpd[11014]: disconnect from unknown[187.34.141.241]
+Sep 17 16:09:36 www1 postfix/local[8652]: C994CA2D3FE: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=981335, delays=420686/560592/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:09:36 www1 postfix/qmgr[8169]: C994CA2D3FE: removed
+Sep 17 16:09:36 www1 postfix/qmgr[8169]: BDDA81363BC: from=<hostlynx@srv.hostlynx.com>, size=3552, nrcpt=1 (queue active)
+Sep 17 16:09:36 www1 postfix/smtp[11386]: BDDA81363BC: host mx01.getifix.de[109.69.71.215] said: 450 4.1.8 <hostlynx@srv.hostlynx.com>: Sender address rejected: Domain not found (in reply to RCPT TO command)
+Sep 17 16:09:36 www1 postfix/smtp[11386]: BDDA81363BC: to=<websnapr@construktiv.de>, orig_to=<xavier@websnapr.com>, relay=mxa.teutates.de[46.163.85.185]:25, delay=461613, delays=461613/0.01/0.44/0.16, dsn=2.0.0, status=sent (250 Message accepted for delivery)
+Sep 17 16:09:36 www1 postfix/qmgr[8169]: BDDA81363BC: removed
+Sep 17 16:09:36 www1 postfix/qmgr[8169]: 2B7CA13459F: from=<root@www1.domain.de>, size=546, nrcpt=1 (queue active)
+Sep 17 16:09:41 www1 postfix/smtpd[10916]: connect from unknown[41.206.139.187]
+Sep 17 16:09:41 www1 postfix/smtpd[10916]: disconnect from unknown[41.206.139.187]
+Sep 17 16:09:41 www1 postfix/smtpd[11015]: connect from dslb-094-222-153-170.pools.arcor-ip.net[94.222.153.170]
+Sep 17 16:09:41 www1 postfix/smtpd[11015]: disconnect from dslb-094-222-153-170.pools.arcor-ip.net[94.222.153.170]
+Sep 17 16:09:56 www1 postfix/smtpd[10916]: connect from mail.classic-motorcycles.co.uk[83.218.15.113]
+Sep 17 16:09:57 www1 postfix/smtpd[10916]: 03B7AA2D3FE: client=mail.classic-motorcycles.co.uk[83.218.15.113]
+Sep 17 16:09:57 www1 postfix/cleanup[8933]: 03B7AA2D3FE: message-id=<201209171409.q8HE9t84031849@mail.classic-motorcycles.co.uk>
+Sep 17 16:09:57 www1 postfix/smtpd[10916]: disconnect from mail.classic-motorcycles.co.uk[83.218.15.113]
+Sep 17 16:09:57 www1 postfix/smtpd[11015]: connect from 71.79.223.87.dynamic.jazztel.es[87.223.79.71]
+Sep 17 16:09:58 www1 postfix/smtpd[11015]: disconnect from 71.79.223.87.dynamic.jazztel.es[87.223.79.71]
+Sep 17 16:10:01 www1 postfix/smtpd[11014]: connect from 193.92.198.104.dsl.dyn.forthnet.gr[193.92.198.104]
+Sep 17 16:10:01 www1 postfix/smtpd[11014]: disconnect from 193.92.198.104.dsl.dyn.forthnet.gr[193.92.198.104]
+Sep 17 16:10:01 www1 postfix/pickup[10235]: CB09A14A7C7: uid=0 from=<root>
+Sep 17 16:10:01 www1 postfix/cleanup[9472]: CB09A14A7C7: message-id=<20120917141001.CB09A14A7C7@www1.domain.de>
+Sep 17 16:10:01 www1 postfix/pickup[10235]: DD23514A7CA: uid=0 from=<root>
+Sep 17 16:10:01 www1 postfix/cleanup[8933]: DD23514A7CA: message-id=<20120917141001.DD23514A7CA@www1.domain.de>
+Sep 17 16:10:02 www1 postfix/smtpd[10916]: warning: 201.216.4.20: hostname Dynamic-IP-cr201216420.cable.net.co verification failed: Name or service not known
+Sep 17 16:10:02 www1 postfix/smtpd[10916]: connect from unknown[201.216.4.20]
+Sep 17 16:10:02 www1 postfix/pickup[10235]: EEB7B14A7CF: uid=0 from=<root>
+Sep 17 16:10:02 www1 postfix/cleanup[9472]: EEB7B14A7CF: message-id=<20120917141002.EEB7B14A7CF@www1.domain.de>
+Sep 17 16:10:03 www1 postfix/smtpd[10916]: disconnect from unknown[201.216.4.20]
+Sep 17 16:10:03 www1 postfix/pickup[10235]: EF5C114A7D0: uid=0 from=<root>
+Sep 17 16:10:03 www1 postfix/cleanup[8933]: EF5C114A7D0: message-id=<20120917141003.EF5C114A7D0@www1.domain.de>
+Sep 17 16:10:05 www1 postfix/pickup[10235]: 0068514A7D1: uid=0 from=<root>
+Sep 17 16:10:05 www1 postfix/cleanup[9472]: 0068514A7D1: message-id=<20120917141005.0068514A7D1@www1.domain.de>
+Sep 17 16:10:06 www1 postfix/pickup[10235]: 02D2914A7D2: uid=0 from=<root>
+Sep 17 16:10:06 www1 postfix/cleanup[8933]: 02D2914A7D2: message-id=<20120917141006.02D2914A7D2@www1.domain.de>
+Sep 17 16:10:07 www1 postfix/pickup[10235]: 0400814A7D3: uid=0 from=<root>
+Sep 17 16:10:07 www1 postfix/cleanup[9472]: 0400814A7D3: message-id=<20120917141007.0400814A7D3@www1.domain.de>
+Sep 17 16:10:14 www1 postfix/smtpd[11015]: connect from unknown[201.196.150.6]
+Sep 17 16:10:15 www1 postfix/smtpd[11015]: NOQUEUE: reject: RCPT from unknown[201.196.150.6]: 554 5.7.1 Service unavailable; Client host [201.196.150.6] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mail.ixlab.de (NiX Spam) as spamming at Mon, 17 Sep 2012 15:41:16 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=201.196.150.6; from=<B2E6D2E@stefanwiegmann.de> to=<nxdfbhwrtf@popuri.us> proto=ESMTP helo=<[201.196.150.6]>
+Sep 17 16:10:15 www1 postfix/smtpd[11015]: disconnect from unknown[201.196.150.6]
+Sep 17 16:10:22 www1 postfix/local[6268]: D1D8BA2DCB1: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=831681, delays=271036/560588/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:10:22 www1 postfix/qmgr[8169]: D1D8BA2DCB1: removed
+Sep 17 16:10:22 www1 postfix/qmgr[8169]: EFB95128609: from=<root@www1.domain.de>, size=551, nrcpt=1 (queue active)
+Sep 17 16:10:23 www1 postfix/smtpd[10916]: connect from host-78-150-132-2.as13285.net[78.150.132.2]
+Sep 17 16:10:23 www1 postfix/smtpd[10916]: disconnect from host-78-150-132-2.as13285.net[78.150.132.2]
+Sep 17 16:10:24 www1 postfix/smtpd[11015]: connect from 192.Red-88-19-26.staticIP.rima-tde.net[88.19.26.192]
+Sep 17 16:10:26 www1 postfix/smtpd[11015]: 0AAADA2DCB1: client=192.Red-88-19-26.staticIP.rima-tde.net[88.19.26.192]
+Sep 17 16:10:27 www1 postfix/cleanup[8933]: 0AAADA2DCB1: message-id=<529675845.76780990939358@worldcom.ch>
+Sep 17 16:10:28 www1 postfix/smtpd[11015]: disconnect from 192.Red-88-19-26.staticIP.rima-tde.net[88.19.26.192]
+Sep 17 16:10:32 www1 postfix/local[6448]: A8A1D125819: to=<root@www1.domain.de>, orig_to=<root>, relay=local, delay=910231, delays=349582/560593/0/56, dsn=2.0.0, status=sent (delivered to command: procmail -a "$EXTENSION")
+Sep 17 16:10:32 www1 postfix/qmgr[8169]: A8A1D125819: removed
+Sep 17 16:10:32 www1 postfix/qmgr[8169]: 6B118147477: from=<root@www1.domain.de>, size=524, nrcpt=1 (queue active)
+Sep 17 16:10:35 www1 postfix/smtpd[11014]: connect from unknown[186.116.65.208]
+Sep 17 16:10:35 www1 postfix/smtpd[11014]: C7541125819: client=unknown[186.116.65.208]
+Sep 17 16:10:36 www1 postfix/smtpd[10916]: connect from 91-119-7-138.dynamic.adsl-line.inode.at[91.119.7.138]
+Sep 17 16:10:36 www1 postfix/cleanup[9472]: C7541125819: message-id=<20120917091049.650B448D92A964B0F69E.688059E@PC-EVOLUTION>
+Sep 17 16:10:36 www1 postfix/smtpd[10916]: disconnect from 91-119-7-138.dynamic.adsl-line.inode.at[91.119.7.138]
+Sep 17 16:10:36 www1 postfix/smtpd[11014]: disconnect from unknown[186.116.65.208]
+Sep 17 16:10:40 www1 postfix/smtpd[11015]: connect from unknown[117.207.134.39]
+Sep 17 16:10:42 www1 postfix/smtpd[11015]: 0B16114A7D4: client=unknown[117.207.134.39]
+Sep 17 16:10:42 www1 postfix/cleanup[8933]: 0B16114A7D4: message-id=<20120917194039.3B5299740F80D4ED0E1D@COMPUTER_1>
+Sep 17 16:10:42 www1 postfix/smtpd[10916]: connect from 62.43.41.6.dyn.user.ono.com[62.43.41.6]
+Sep 17 16:10:42 www1 postfix/smtpd[11015]: disconnect from unknown[117.207.134.39]
+Sep 17 16:10:42 www1 postfix/smtpd[10916]: disconnect from 62.43.41.6.dyn.user.ono.com[62.43.41.6]
+Sep 17 16:10:43 www1 postfix/smtpd[11014]: warning: 14.96.107.138: hostname Static-138.107.96.14.tataidc.co.in verification failed: Name or service not known
+Sep 17 16:10:43 www1 postfix/smtpd[11014]: connect from unknown[14.96.107.138]
+Sep 17 16:10:44 www1 postfix/smtpd[11014]: disconnect from unknown[14.96.107.138]
+Sep 17 16:10:49 www1 postfix/smtpd[11015]: connect from 40.143.19.95.dynamic.jazztel.es[95.19.143.40]
+Sep 17 16:10:50 www1 postfix/smtpd[11015]: disconnect from 40.143.19.95.dynamic.jazztel.es[95.19.143.40]
+Sep 17 16:10:51 www1 postfix/smtpd[10916]: connect from unknown[117.223.98.254]
+Sep 17 16:10:51 www1 postfix/smtpd[11014]: connect from c-107-5-112-147.hsd1.mi.comcast.net[107.5.112.147]
+Sep 17 16:10:51 www1 postfix/smtpd[11014]: disconnect from c-107-5-112-147.hsd1.mi.comcast.net[107.5.112.147]
+Sep 17 16:10:51 www1 postfix/smtpd[10916]: NOQUEUE: reject: RCPT from unknown[117.223.98.254]: 554 5.7.1 Service unavailable; Client host [117.223.98.254] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mail.ixlab.de (NiX Spam) as spamming at Mon, 17 Sep 2012 06:50:12 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=117.223.98.254; from=<6B18C7E@onebridge.com> to=<3b0f974@wong.to> proto=ESMTP helo=<[117.223.98.254]>
+Sep 17 16:10:52 www1 postfix/smtpd[10916]: disconnect from unknown[117.223.98.254]
+Sep 17 16:10:56 www1 postfix/smtpd[11015]: connect from 17.Red-80-35-120.staticIP.rima-tde.net[80.35.120.17]
+Sep 17 16:10:57 www1 postfix/smtpd[11015]: disconnect from 17.Red-80-35-120.staticIP.rima-tde.net[80.35.120.17]
+Sep 17 16:10:57 www1 postfix/smtpd[10916]: connect from unknown[180.211.153.67]
+Sep 17 16:10:58 www1 postfix/smtpd[10916]: NOQUEUE: reject: RCPT from unknown[180.211.153.67]: 554 5.7.1 Service unavailable; Client host [180.211.153.67] blocked using ix.dnsbl.manitu.net; Your e-mail service was detected by mx.selfip.biz (NiX Spam) as spamming at Mon, 17 Sep 2012 11:34:34 +0200. Your admin should visit http://www.dnsbl.manitu.net/lookup.php?value=180.211.153.67; from=<7140E170@delfinsport.com> to=<odcqvvl@popuri.us> proto=ESMTP helo=<[180.211.153.172]>
+Sep 17 16:10:58 www1 postfix/smtpd[10916]: disconnect from unknown[180.211.153.67]
+Sep 17 16:11:03 www1 postfix/pickup[10235]: 2D04814A7DA: uid=0 from=<root>
+Sep 17 16:11:03 www1 postfix/cleanup[9472]: 2D04814A7DA: message-id=<20120917141103.2D04814A7DA@www1.domain.de>
+Sep 17 16:11:04 www1 postfix/pickup[10235]: 2EF8A14A7DB: uid=0 from=<root>
+Sep 17 16:11:04 www1 postfix/cleanup[8933]: 2EF8A14A7DB: message-id=<20120917141104.2EF8A14A7DB@www1.domain.de>
+Jul 18 20:01:44 mail postfix/cleanup[7601]: 75B1711C26A2: message-id=<20160718150104.75B1711C26A2@abcmail.abc-telecom.az>
+Jul 18 20:01:44 mail postfix/qmgr[29643]: 75B1711C26A2: from=<fake@acb-telecom.az>, size=373, nrcpt=1 (queue active)
+Jul 18 20:01:44 mail postfix/smtpd[7796]: connect from localhost.localdomain[127.0.0.1]
+Jul 18 20:01:44 mail postfix/smtpd[7796]: 8C50511C28CC: client=localhost.localdomain[127.0.0.1]
+Jul 18 20:01:44 mail postfix/cleanup[7601]: 8C50511C28CC: message-id=<20160718150104.75B1711C26A2@abcmail.abc-telecom.az>
+Jul 18 20:01:44 mail postfix/smtpd[7796]: disconnect from localhost.localdomain[127.0.0.1]
+Jul 18 20:01:44 mail postfix/qmgr[29643]: 8C50511C28CC: from=<fake@acb-telecom.az>, size=856, nrcpt=1 (queue active)
+Jul 18 20:01:44 mail amavis[7615]: (07615-03) Passed CLEAN {RelayedOutbound}, LOCAL [127.0.0.1]:35717 [127.0.0.1] <fake@acb-telecom.az> -> <raufbey80@gmail.com>, Queue-ID: 75B1711C26A2, Message-ID: <20160718150104.75B1711C26A2@abcmail.abc-telecom.az>, mail_id: h9KReoxKnd6Z, Hits: 3.123, size: 374, queued_as: 8C50511C28CC, 422 ms
+Jul 18 20:01:44 mail postfix/smtp[7603]: 75B1711C26A2: to=<raufbey80@gmail.com>, relay=127.0.0.1[127.0.0.1]:10024, delay=67, delays=66/0/0/0.42, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 8C50511C28CC)
+Jul 18 20:01:44 mail postfix/qmgr[29643]: 75B1711C26A2: removed
+Jul 18 20:01:45 mail postfix/smtp[7841]: 8C50511C28CC: to=<raufbey80@gmail.com>, relay=gmail-smtp-in.l.google.com[74.125.136.26]:25, delay=1.2, delays=0.08/0/0.73/0.36, dsn=5.7.1, status=bounced (host gmail-smtp-in.l.google.com[74.125.136.26] said: 550-5.7.1 [62.217.135.244      12] Our system has detected that this message is 550-5.7.1 likely unsolicited mail. To reduce the amount of spam sent to Gmail, 550-5.7.1 this message has been blocked. Please visit 550 5.7.1  https://support.google.com/mail/answer/188131 for more information. y8si1587248wjc.229 - gsmtp (in reply to end of DATA command))
+Jul 18 20:01:45 mail postfix/cleanup[7601]: BCFAB11C28FC: message-id=<20160718150145.BCFAB11C28FC@abcmail.abc-telecom.az>
+Jul 18 20:01:45 mail postfix/bounce[8069]: 8C50511C28CC: sender non-delivery notification: BCFAB11C28FC
+Jul 18 20:01:45 mail postfix/qmgr[29643]: BCFAB11C28FC: from=<>, size=3537, nrcpt=1 (queue active)
+Jul 18 20:01:45 mail postfix/qmgr[29643]: 8C50511C28CC: removed
+Jul 18 20:01:46 mail postfix/smtp[7841]: BCFAB11C28FC: to=<fake@acb-telecom.az>, relay=none, delay=0.21, delays=0.03/0/0.19/0, dsn=5.4.4, status=bounced (Host or domain name not found. Name service error for name=acb-telecom.az type=A: Host not found)
+Jul 18 20:01:46 mail postfix/qmgr[29643]: BCFAB11C28FC: removed
