@@ -10,3 +10,9 @@ add_subdirectory(printing)
 add_subdirectory(sorting)
 
 target_link_libraries(${PROJECT_NAME} Printing_lib Sorting_lib)
+
+add_subdirectory(test)
+
+if (DEFINED ENV{GITHUB_ACTION})
+    enable_testing()
+endif (DEFINED ENV{GITHUB_ACTION})
