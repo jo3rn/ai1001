@@ -22,5 +22,10 @@ int main() {
   insertionSort(arrInsertion, nInsertion);
   printArray(arrInsertion, nInsertion);
 
+  /* this is buggy */
+  printf("Let's sort with bubble sort!\n");
+  bubbleSort(arrBubble, nBubble);
+  printArray(arrBubble, nBubble);
+
   return 0;
 }

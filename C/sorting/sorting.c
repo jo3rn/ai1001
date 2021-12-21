@@ -43,3 +43,23 @@ void selectionSort(int arr[], int n) {
 void insertionSort(int arr[], int n) {
   // TODO: implement using TDD method
 }
+
+/**
+ * @brief sorts @p arr using bubble sort algorithm.
+ *
+ * This function repeatedly takes two elements of @p arr and swaps them,
+ * if they are not in ascending order.
+ * @param arr the array to be sorted in place.
+ * @param n the size of the array to be sorted.
+ * @warning this implementation is buggy, do not use
+ */
+void bubbleSort(int arr[], int n) {
+  int i, j;
+  for (i = 0; i < n - 1; i++) {
+    for (j = 0; j < n - i; j++) {
+      if (arr[j] < arr[j + 1]) {
+        swap(&arr[j], &arr[j + 1]);
+      }
+    }
+  }
+}
