@@ -5,11 +5,12 @@ set(CMAKE_C_STANDARD 99)
 
 set(SOURCE_FILES main.c)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-include_directories(printing sorting)
+include_directories(checking printing sorting)
+add_subdirectory(checking)
 add_subdirectory(printing)
 add_subdirectory(sorting)
 
-target_link_libraries(${PROJECT_NAME} Printing_lib Sorting_lib)
+target_link_libraries(${PROJECT_NAME} Checking_lib Printing_lib Sorting_lib)
 
 add_subdirectory(test)
 

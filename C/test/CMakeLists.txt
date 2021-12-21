@@ -15,10 +15,10 @@ endif (DEFINED ENV{GITHUB_ACTION})
 
 # adding the Google_Tests_run target
 set(TEST_NAME ${PROJECT_NAME}_run)
-add_executable(${TEST_NAME} sortingTest.cpp)
+add_executable(${TEST_NAME} checkingTest.cpp sortingTest.cpp)
 
-# linking with Sorting_lib which will be tested
-target_link_libraries(${TEST_NAME} Sorting_lib)
+# linking with libs which will be tested
+target_link_libraries(${TEST_NAME} Checking_lib Sorting_lib)
 
 target_link_libraries(${TEST_NAME} gtest gtest_main)
 
