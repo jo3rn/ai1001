@@ -2213,6 +2213,237 @@ Testing & Debugging
 
 ---
 
+### Testing
+
+- deckt nicht erwünschtes Verhalten auf
+- dokumentiert erwünschtes Verhalten (Spezifikation)
+- schafft Vertrauen für Änderungen am Code
+- beeinflusst Softwaredesign ("testability")
+
+---
+
+#### Unit Test
+
+- Unit = kleine, für sich stehende Komponente im Code
+  - Funktion(en), Method(en)
+  - Klasse(n), Datei(en), Modul(e)
+- Unit Tests sind schnell, häufig und automatisiert ausführbar
+
+in Bezug auf Agile Development:
+
+- Autor\*in des Codes und der zugehörigen Tests identisch
+- Teil von Continuous Integration und Definition of Done
+
+---
+
+##### Unit Test: vereinfachtes Beispiel
+
+zu testende Einheit (Unit):
+
+```C
+int add(int a, int b) {
+  return a + b;
+}
+```
+
+Tests:
+
+```C
+void main() {
+  printf("%s\n", add(2, 3) == 5 ? "ok" : "Fehler!");
+  printf("%s\n", add(-2, 3) == 1 ? "ok" : "Fehler!");
+}
+```
+
+---
+
+##### Unit Test: welche Testfälle?
+
+- gültige und ungültige Eingaben von Äquivalenzklassen
+  - z.B. Wertebereiche, leere Elemente, Datentypen, `null`
+- Grenzfälle
+  - größte/kleinste/längste/... Eingaben
+  - z.B. `add(INT_MAX, 1)`
+- Zustandsdiagramme, endliche Automaten, Business-Logik
+  - z.B. je nach Kontostand Zahlung erlauben oder verweigern
+
+---
+
+##### Unit Tests genügen nicht
+
+![bg right 96%](./img/unit_test_pass_1.jpg)
+
+![](./img/unit_test_pass_2.jpg)
+
+---
+
+#### Weitere Tests
+
+- **Integration**: das Zusammenspiel mehrerer Units/Komponenten
+- **System**: Usability, Sicherheit, Lasttest, Interaktion mit Hardware
+- **Akzeptanz**: Spezifikationen (User Stories) werden erfüllt
+
+![h:310](./img/integration_to_deployment.jpg)
+
+<!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:DevOps_from_Integration_to_Deployment.jpg)' -->
+
+---
+
+#### ...und noch mehr Tests
+
+Was passiert, wenn...
+
+- das Backend nicht erreichbar ist oder ein Sensor ausfällt?
+- externe Services ihre Schnittstelle ändern?
+- das Gerät in den Energiesparmodus wechselt oder der Stromkreis unterbrochen wird?
+- die Software über einen langen Zeitraum läuft?
+- User körperlich beeinträchtigt sind?
+- sich rechtliche Rahmenbedingungen ändern?
+
+---
+
+#### Testing Framework
+
+- Hilfsfunktionen, um Annahmen zu überprüfen (_assert_)
+- Verhalten anderer Programmteile nachahmen (_mock_)
+- mehrere Tests gruppieren und getrennt ausführen
+  - _Suites_: gemeinsame Funktion
+  - _Fixtures_: gemeinsame Daten
+- Tests unterbrechungsfrei durchführen
+- anpassbares, anschauliches und exportierbares Logging
+
+Beispiele: [JUnit](https://junit.org/)/[Mockito](https://site.mockito.org/) (Java) und [GoogleTest](https://github.com/google/googletest) (C)
+
+---
+
+### Test Driven Development
+
+...am Anfang war der Test...
+
+|                                               |                                                                                              |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| <span style="color:red;">**Red**</span>       | Was soll der Code tun? Passenden Test entwerfen und ausführen -> Test sollte fehlschlagen    |
+| <span style="color:green;">**Green**</span>   | Code schreiben, bis der zugehörige Test das gewünschte Verhalten bestätigt                   |
+| <span style="color:blue;">**Refactor**</span> | den Code vereinfachen, optimieren, etc. und nach jeder Veränderung den Test erneut ausführen |
+
+-> diesen Ablauf für jede weitere Anforderung wiederholen
+
+---
+
+![bg contain 85%](./img/TDD_Global_Lifecycle.png)
+
+<!-- _footer: '[Source](https://commons.wikimedia.org/wiki/File:TDD_Global_Lifecycle.png)' -->
+
+---
+
+### Live-Übung: Palindrom-Checker mit TDD
+
+<!-- _backgroundColor: #fec7e2  -->
+
+```C
+int isPalindrome(char str[]) {
+  // TODO: implementation
+  return 0;
+}
+```
+
+```C++
+TEST(PalindromeTestSuite, EmptyString) {
+  char str[] = "";
+  int actual = isPalindrome(str);
+
+  ASSERT_EQ(actual, 1);
+}
+
+// TODO: more tests
+```
+
+---
+
+### Debugging
+
+![bg contain](./img/ducks.jpg)
+
+<!-- _footer: '[Source](https://pixabay.com/de/photos/enten-spielzeuge-ente-baby-kind-452485/)' -->
+
+---
+
+#### Print statements
+
+```C
+printf("Bis hierhin gekommen.");
+```
+
+> The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.
+
+[Brian Kernighan](https://www.ualberta.ca/computing-science/media-library/docs/unix-beginners.pdf) (_Unix for Beginners_, 1978)
+
+---
+
+#### Logging
+
+```C
+FILE *fp;
+fp = fopen("/tmp/logs.txt", "a");
+fprintf(fp, "2022-01-13 11:32:09,458 - basket - ERROR - couldn't add item");
+fclose(fp);
+```
+
+- Wichtigkeitsgrade, z.B. debug, info, warn, error ([SysLog Severity](https://datatracker.ietf.org/doc/html/rfc5424#page-11))
+- Zeitstempel
+- farbliche Hervorhebungen
+- viele Libraries und Cloud-Services verfügbar
+
+---
+
+#### Debugger
+
+![bg right 90% 200%](./img/first_bug.png)
+
+- ein Programm unter kontrollierten Bedingungen ausführen
+- Ziel: Fehlverhalten ergründen
+- für C z.B. [GDB](https://www.sourceware.org/gdb/)
+
+<!-- _footer: '[Source](https://commons.wikimedia.org/w/index.php?curid=165211)' -->
+
+---
+
+##### Debugger: Breakpoint
+
+- pausiert das Programm an einer Stelle, um den aktuellen Zustand zu inspizieren (oder zu ändern)
+- lässt sich dynamisch an/ausschalten oder loggen
+
+![](./img/breakpoints.png)
+
+---
+
+##### Debugger: während Pausierung
+
+- Variablen: Werte ändern, zur Deklaration springen
+- Ausdrücke auswerten
+- Ausdrücke/Variablen beobachten
+- Speicher inspizieren
+
+![](./img/debug_view.png)
+
+---
+
+### Live-Übung: Debugging
+
+<!-- _backgroundColor: #fec7e2  -->
+
+---
+
+### Testing & Debugging: sonstige Ressourcen
+
+<!-- _backgroundColor: lightblue -->
+
+- <https://www.jetbrains.com/help/clion/debugging-code.html>
+  <https://www.jetbrains.com/help/idea/debugging-code.html>
+  Debugging Informationen zu CLion und IntelliJ IDEA
+
+---
+
 ## Woche 11
 
 ![bg left:40% 80%](./img/understandable.webp)
