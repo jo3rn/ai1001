@@ -117,7 +117,7 @@ Die Details auf den folgenden Folien nehmen viel vorweg, was wir uns erst im Lau
 ### Lerntagebuch Format
 
 - [Markdown-Datei](https://www.markdownguide.org/basic-syntax/) (z.B. `README.md`)
-- über die Konsole bearbeiten (z.B. vim)
+- über die Konsole bearbeiten (z.B. vim, nano)
 - Sprache **entweder** Deutsch oder Englisch
 - verfügbar machen auf <https://gitlab.cs.hs-fulda.de>
   - _fdai0178_ & _fdai0209_ mit Rolle _Developer_ hinzufügen
