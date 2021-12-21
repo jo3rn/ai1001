@@ -81,3 +81,6 @@ cmake-build-debug/
 
 # Google Tests
 */test/lib/
+
+# Doxygen
+html/
