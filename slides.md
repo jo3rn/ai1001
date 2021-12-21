@@ -2038,8 +2038,8 @@ $   Dollar              ()  runde Klammern
 - `\s` Whitespace Zeichen
 - `.` egal was
 
-| Regex |                                                                                                                                              | Treffer        | kein Treffer |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------ |
+| Regex | Treffer                                                                                                                                      | kein Treffer   |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | `\d`  | Rha<span class="highlight">6</span>ar<span class="highlight">6</span>er<span class="highlight">6</span>ar<span class="highlight">6</span>ara | Erdbeeremil    |
 | `\s`  | Rhabarberbarbaras Bar                                                                                                                        | Erdbeeremileck |
 | `.`   | Erdbeeremil                                                                                                                                  |
