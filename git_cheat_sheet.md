@@ -9,6 +9,7 @@ Alle wichtigen Kommandos auf einen Blick!
 ## Log
 
 * `git log` zeigt das Commit-Log [Link](https://git-scm.com/docs/git-log)
+* `git log --oneline` zeigt ebenso das Commit-Log, jedoch in einer Zeile und mit dem Short Hash sowie die Short Description
 * `git log -<number>` zeigt das Log der letzten `<number>` Commits 
 * `git status` zeigt den Status des Working Trees an
 
