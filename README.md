@@ -11,3 +11,7 @@ Du hast einen Fehler entdeckt? Dir fällt eine sinnvolle Ergänzung ein? Erstell
 ## Git Cheat Sheet
 
 Das [Git Cheat Sheet](git_cheat_sheet.md) beinhaltet eine Kurzbeschreibung nützlicher Git-Befehle. Dein Lieblingsbefehl fehlt in der Liste? Erstelle einen Pull Request!
+
+## Bonuspunkte
+
+Sinnvolle Ergänzung: Denkt daran euch noch einen Bonuspunkt abzuholen und einen Pull Request zu erstellen. Viele Grüße und einen guten Start in das neue Jahr 2022. 
