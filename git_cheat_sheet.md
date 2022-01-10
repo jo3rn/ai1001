@@ -5,6 +5,7 @@ Alle wichtigen Kommandos auf einen Blick!
 ## Basics
 
 * `git init` erstellt/reinitialisiert ein Git-Repository im aktuellen Verzeichnis [Link](https://git-scm.com/docs/git-init)
+* `git add` fügt eine Änderung aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu. Dies hat noch keine signifikanten Auswirkungen auf das Repository. (erst durch den command `git commit`) [Link](https://git-scm.com/docs/git-add)
 
 ## Log
 
