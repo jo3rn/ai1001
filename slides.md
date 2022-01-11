@@ -903,7 +903,7 @@ Releases sind Tags auf dem trunk-Branch (`release1.0`) oder abgespaltete `releas
 - Developer:
   - `pull`en mehrmals täglich vom trunk
   - `push`en möglichst täglich in den trunk
-- es kann zu (fast) jederzeit releast werden
+- es kann zu (fast) jeder Zeit releast werden
 - "never break the build"
   - Commits vor dem `push` testen / reviewen / pair-programmieren
   - falls dennoch kaputt: `revert`/`reset` (möglichst automatisiert)
@@ -945,7 +945,7 @@ A --- B --------- C ------------------------ D   (* main -> D)
 - `develop`: `feature`s für nächstes Release
 - `feature`: work in progress
 - `release`: letzte Vorkehrungen vor Release
-- `hotfix`: Behebung kritische Fehler in bereits releaster Version
+- `hotfix`: Behebung kritischer Fehler in bereits releaster Version
 
 ---
 
@@ -1013,7 +1013,7 @@ Git Sonstiges
 <!-- _backgroundColor: #c2f5a6 -->
 
 1. > Es können pro 'merge' immer nur zwei Branches zusammengeführt werden.
-2. > HEAD = ist der "Branch" auf dem man sich gerade befindet
+2. > HEAD = ist der "Branch" auf dem man sich gerade befindet.
 3. > Falls Fehler aufgetreten sind, kann man mit dem Interactive Staging Commits umstagen und korrigieren.
 
 ---
@@ -1288,7 +1288,7 @@ As a _..._ I want _..._ so that _..._ (was soll erreicht werden?)
 - Erfahrung, Wissen und Feedback des Kunden nutzen, um:
   - Aufgaben zu priorisieren
   - neue Aufgaben zu erstellen
-  - Aufgaben verwerfen
+  - Aufgaben zu verwerfen
 
 ---
 
@@ -1298,7 +1298,7 @@ As a _..._ I want _..._ so that _..._ (was soll erreicht werden?)
 
 - alle Anforderungen im Voraus genau festlegen
   - Aufwandsschätzungen auf falschen Annahmen
-- auf langfristig geplante Aufgaben beharren
+- auf langfristig geplanten Aufgaben beharren
 - Kommunikation mit Kunden nur
   - über Projektmanager\*innen
   - alle paar Wochen in mehrstündigen Meetings
