@@ -4,6 +4,7 @@ theme: gaia
 _class: lead
 paginate: true
 backgroundColor: #fff
+math: katex
 ---
 
 <style>
@@ -2438,6 +2439,9 @@ fclose(fp);
 
 <!-- _backgroundColor: lightblue -->
 
+- Kapitel "Testgetriebene Entwicklung" in "Agile Entwicklungspraktiken mit Scrum"
+  <https://hds.hebis.de/hlbfu/Record/HEB261342312> (HLB)
+
 - <https://www.jetbrains.com/help/clion/debugging-code.html>
   <https://www.jetbrains.com/help/idea/debugging-code.html>
   Debugging Informationen zu CLion und IntelliJ IDEA
@@ -2590,12 +2594,12 @@ Wiederholung / Projekt
 
 ---
 
-### Woche 13
+## Woche 13
 
 ![bg left:40% 80%](./img/opensourcecommunism.jpg)
 
 <!-- _backgroundColor: #f7eda8 -->
 
-Open Source
+Free and Open Source Software
 
 <!-- _footer: '[Source](http://www.modernhumorist.com/mh/0004/propaganda/mp3.php)' -->
