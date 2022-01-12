@@ -1013,7 +1013,7 @@ Git Sonstiges
 <!-- _backgroundColor: #c2f5a6 -->
 
 1. > Es können pro 'merge' immer nur zwei Branches zusammengeführt werden.
-2. > HEAD = ist der "Branch" auf dem man sich gerade befindet.
+2. > HEAD = ist der "Branch" auf dem man sich gerade befindet
 3. > Falls Fehler aufgetreten sind, kann man mit dem Interactive Staging Commits umstagen und korrigieren.
 
 ---
