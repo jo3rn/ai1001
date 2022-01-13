@@ -10,7 +10,7 @@ Mögliche Lösungen finden sich in der Datei `learnRegex.sh`
 
 ## 1.2
 
-`grep -Pao '((\+\d{2}|\d{3}) (\d{2} \d{7} |(\(?\d{2}\)?|\(\d\)\d{2}) |)\d{5} ?- ?\d{2}|\+\d{2} (\d)\d{2} \d{5}-\d{2}|\d{4} \d \d{6}|\d \d{2} \/ (\d{2} ){2}\d{2})' kaputt.txt`
+`grep -Pao '((\+\d{2}|\d{3}) (\d{2} \d{7}|((\(?\d{2}\)?|\(\d\)\d{2}) |)\d{5} ?- ?\d{2})|\+\d{2}-\d{2}-\d{7}|\d{4} \d \d{6}|\d \d{2} \/ (\d{2} ){2}\d{2})' kaputt.txt`
 
 ## 1.3
 
