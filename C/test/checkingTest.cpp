@@ -17,6 +17,13 @@ TEST(PalindromeTestSuite, Null) {
   ASSERT_EQ(actual, 0);
 }
 
+TEST(PalindromeTestSuite, SingleCharacter) {
+  char str[] = "a";
+  int actual = isPalindrome(str);
+
+  ASSERT_EQ(actual, 1);
+}
+
 TEST(PalindromeTestSuite, PalindromeEven) {
   char str[] = "lagerregal";
   int actual = isPalindrome(str);
