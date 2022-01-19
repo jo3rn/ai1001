@@ -2482,13 +2482,15 @@ Clean Code
 
 ### Boy Scout Rule
 
+![bg right:40% 80%](./img/warnings.jpg)
+
 "Leave the campground cleaner than you found it."
 
-![bg right:40% 80%](./img/warnings.jpg)
+Die folgenden Beispiele sind Anregungen. Ausnahmen bestätigen die Regel.
 
 ---
 
-### Namen
+#### Namen
 
 Variablen, Methoden, Klassen, Pakete, Parameter,...
 
@@ -2502,7 +2504,7 @@ Beispiel: Fortschritt des Downloads in Prozent
 
 ---
 
-### Kommentare
+#### Kommentare
 
 - selbsterklärender Code benötigt keine Kommentare
   - keine Wiederholungen
@@ -2515,17 +2517,107 @@ Beispiel: Fortschritt des Downloads in Prozent
 
 ---
 
-### Magische Werte
+#### Funktionsargumente
+
+- Anzahl gering halten
+- wenn möglich nicht in place verändern (keine "output arguments")
+  - Rückgabewerte oder Memberfunktionen nutzen
+- nicht als Flag benutzen: `getPrice(boolean discount)`
+  - separate Funktionen erstellen:
+    `getPrice()`
+    `getPriceWithDiscount()`
+
+---
+
+#### Formatierung
+
+- semantischer Zusammenhang durch räumliche Nähe
+- Hierarchie durch Einrückung
+- Lesbarkeit durch horizontale Grenzen
+- Verständlichkeit durch Stringenz/Konventionen
+
+---
+
+#### Magische Werte
 
 ```C
 double price = 50 * 1.19;
 ```
+
+besser so:
 
 ```C
 double VAT_GERMANY = 0.19;
 double netValue = 50;
 
 double price = netValue * (1 + VAT_GERMANY);
+```
+
+---
+
+#### Erklärende Variablen
+
+```C
+return PI * r * r * h / 3.0;
+```
+
+besser so:
+
+```C
+double baseArea = PI * radius * radius;
+
+return baseArea * height / 3.0;
+```
+
+---
+
+#### Bedingungen
+
+erklärend:
+
+```C
+while (a > b && !(c || d) || a != f) { ... }
+// besser so:
+while (has2GPlusStatus()) { ... }
+```
+
+Negationen vermeiden:
+
+```C
+if (!notVaccinated) { ... }
+// besser so:
+if (vaccinated) { ... }
+```
+
+---
+
+#### Single Responsibility
+
+Für Funktionen, Module, Klassen,... gilt: _"only one reason to change"_ (nicht immer trivial festzustellen)
+
+Kann ich...
+
+- Teile der Funktion auslagern?
+- Informationen mit Parametern übergeben?
+- unerwartete Seiteneffekte verhindern?
+
+---
+
+#### Don't repeat yourself (DRY-Prinzip)
+
+Code, der sich wiederholt, lässt sich schwieriger und fehleranfälliger verändern und warten.
+
+kann subtiler auftreten als simples Copy-Paste:
+
+```C
+if (choice == 1) {
+  difficulty += 2;
+} else if (choice == 2) {
+  difficulty += 4;
+}
+
+// besser so:
+difficulty += choice * 2;
 ```
 
 ---
@@ -2544,7 +2636,7 @@ double price = netValue * (1 + VAT_GERMANY);
 
 ---
 
-### weitere "Code Smells"
+#### weitere "Code Smells"
 
 - träge: eine Änderung erfordert viele Folgeänderungen
 - anfällig: eine Änderung verursacht Fehler an anderen Stellen
@@ -2552,11 +2644,20 @@ double price = netValue * (1 + VAT_GERMANY);
 
 ---
 
-### Refactoring
+### Refactoring: ein Ausweg
+
+Refactoring bedeutet bestehenden Code so zu verändern, dass mind. eine Eigenschaft verbessert wird:
+
+- Lesbarkeit / Verständlichkeit
+- Wartbarkeit
+- Fähigkeit für Erweiterungen / Veränderungen
+- Effizienz / Performance
+
+Alle bestehenden Funktionalitäten bleiben dabei erhalten.
 
 ---
 
-### Premature Optimization
+#### Refactoring: Premature Optimization
 
 ![bg right:40% 80%](./img/optimization.png)
 
@@ -2566,19 +2667,34 @@ double price = netValue * (1 + VAT_GERMANY);
 
 ---
 
-### YAGNI
+#### Refactoring: You ain't gonna need it (YAGNI)
 
-"You ain't gonna need it."
-
-The best code is no code / code you don't have to maintain.
+> Every new line of code you willingly bring into the world is code that has to be debugged, code that has to be read and understood, code that has to be supported.
+> [Jeff Atwood](https://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 
 ---
 
-### Dotfiles
+### Entwicklungsumgebung härten
 
-Remote configuration files
+- in einem Schritt ausführbar:
+  - Builds, z.B. mit [Build Systemen](https://en.wikipedia.org/wiki/List_of_build_automation_software)
+  - Tests, z.B. mit [Testing Frameworks](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks)
+- eigene Entwicklungsumgebung portierbar, z.B. mit [Dotfiles](https://missing.csail.mit.edu/2019/dotfiles/)
 
-Setup your machine faster
+---
+
+### Clean Code: sonstige Ressourcen
+
+<!-- _backgroundColor: lightblue -->
+
+- Buch: "Clean Code" (Beispiele in Java)
+  <https://hds.hebis.de/hlbfu/Record/HEB366074660> (HLB)
+
+- Sammlung von Refactoring Praktiken und Design Patterns
+  <https://refactoring.guru/>
+
+- GitHub Action, die auf Clean Code Vorschläge prüft
+  <https://github.com/marketplace/better-code-hub>
 
 ---
 
