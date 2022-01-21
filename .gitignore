@@ -84,3 +84,5 @@ cmake-build-debug/
 
 # Doxygen
 html/
+
+.vscode
