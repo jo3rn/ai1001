@@ -21,7 +21,8 @@ Alle wichtigen Kommandos auf einen Blick!
 * `git checkout` ermöglicht das Wechseln zwischen Branches [Link](https://git-scm.com/docs/git-checkout)
 * `git checkout -b [branchname]` erstellt einen Branch und wechselt direkt zu diesem
 * `git merge` fügt Branches zusammen [Link](https://git-scm.com/docs/git-merge)
-* `git rebase` verschiebt eine Abzweigung am main Branch; sollte am Besten nur lokal angewandt werden, da sonst die Historien bei den Teammitgliedern nicht mehr übereinstimmen [Link](https://git-scm.com/docs/git-rebase)
+* `git rebase` verschiebt eine Abzweigung am main Branch; sollte am Besten nur lokal angewandt werden, da sonst die Historien bei den Teammitgliedern nicht mehr übereinstimmen [Link](https://git-scm.com/docs/git-rebase)  
+* `git fetch` importiert Commits als Remote-Branch aus dem Remote-Repository [Link](https://git-scm.com/docs/git-fetch)
 
 ## Remote
 
