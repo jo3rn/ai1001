@@ -2502,6 +2502,8 @@ Variablen, Methoden, Klassen, Pakete, Parameter,...
 Beispiel: Fortschritt des Downloads in Prozent
 `downloadProgressInPercent` vs. `goal`, `progress`, `dpip`, `d`, `50`...
 
+Moderne IDEs helfen mit _Rename_-Funktion.
+
 ---
 
 #### Kommentare
@@ -2573,20 +2575,43 @@ return baseArea * height / 3.0;
 
 #### Bedingungen
 
-erklärend:
-
 ```C
+// nicht kryptisch
 while (a > b && !(c || d) || a != f) { ... }
-// besser so:
+// sondern erklärend
 while (has2GPlusStatus()) { ... }
 ```
 
-Negationen vermeiden:
+Negation und doppelte Verneinung vermeiden:
 
 ```C
 if (!notVaccinated) { ... }
 // besser so:
 if (vaccinated) { ... }
+```
+
+---
+
+#### Laufvariablen vermeiden
+
+```C
+RPS choice = STONE;
+if (opponent == STONE) {
+  choice = PAPER;
+} else if (opponent == PAPER) {
+   choice = SCISSORS;
+}
+return choice;
+```
+
+```C
+// besser: keine koppelnde Laufvariable "choice"
+if (opponent == STONE) {
+  return PAPER;
+if (opponent == PAPER) {
+  return SCISSORS;
+}
+return STONE;
 ```
 
 ---
@@ -2603,7 +2628,19 @@ Kann ich...
 
 ---
 
-#### Don't repeat yourself (DRY-Prinzip)
+##### Single Responsibility: Suche nach Übeltätern
+
+```bash
+git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10
+```
+
+-> zeige Dateien, die in den meisten Commits auftauchen
+
+Hat der Code in diesen Dateien evtl. mehr als "one reason to change"?
+
+---
+
+#### DRY-Prinzip (Don't repeat yourself)
 
 Code, der sich wiederholt, lässt sich schwieriger und fehleranfälliger verändern und warten.
 
@@ -2618,6 +2655,30 @@ if (choice == 1) {
 
 // besser so:
 difficulty += choice * 2;
+```
+
+---
+
+##### DRY-Prinzip: Beispiel: lokale Variable extrahieren
+
+```C
+for (int i = 0; i < sizeof(items) / sizeof(items[0]); i++) {
+  printf("%llu items\n", sizeof(items) / sizeof(items[0]));
+  if (i >= sizeof(items) / sizeof(items[0]) / 2) {
+    // ...
+  }
+}
+```
+
+```C
+// besser: Ausdruck zur Bestimmung der Länge als lokale Variable
+size_t length = sizeof(items) / sizeof(items[0];
+for (int i = 0; i < length); i++) {
+  printf("%llu items\n", length);
+  if (i >= length / 2) {
+    // ...
+  }
+}
 ```
 
 ---
@@ -2644,7 +2705,7 @@ difficulty += choice * 2;
 
 ---
 
-### Refactoring: ein Ausweg
+### Refactoring: Code sauber waschen
 
 Refactoring bedeutet bestehenden Code so zu verändern, dass mind. eine Eigenschaft verbessert wird:
 
@@ -2653,7 +2714,14 @@ Refactoring bedeutet bestehenden Code so zu verändern, dass mind. eine Eigensch
 - Fähigkeit für Erweiterungen / Veränderungen
 - Effizienz / Performance
 
-Alle bestehenden Funktionalitäten bleiben dabei erhalten.
+---
+
+#### Refactoring: Funktionalität erhalten
+
+Durch Refactoring verändert man den Code, aber **nicht** das beobachtbare Verhalten des Programms.
+
+- vorhandene Tests bleiben grün
+- den Zustand vor dem Refactoring sichern (und ggf. zurückrollen)
 
 ---
 
