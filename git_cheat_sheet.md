@@ -6,6 +6,7 @@ Alle wichtigen Kommandos auf einen Blick!
 
 * `git init` erstellt/reinitialisiert ein Git-Repository im aktuellen Verzeichnis [Link](https://git-scm.com/docs/git-init)
 * `git add` fügt eine Änderung aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu. Dies hat noch keine signifikanten Auswirkungen auf das Repository. (erst durch den command `git commit`) [Link](https://git-scm.com/docs/git-add)
+* `git commit -m "commit message"` speichert die Commitmessage direkt beim Committen
 
 ## Log
 
@@ -27,6 +28,7 @@ Alle wichtigen Kommandos auf einen Blick!
 ## Remote
 
 * `git remote add <name> <url>` erstellt eine neue Verbindung zu einem remote Repo. Wenn man ein solches Repo hinzugefügt hat, so kann man `<name>` in anderen Befehlen als Shortcut für `<url>`verwenden.
+* `git push` lädt Inhalte des lokalen Repositorys in das hinterlegte Remote-Repository
 
 ## Config
 
