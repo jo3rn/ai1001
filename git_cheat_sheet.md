@@ -7,7 +7,9 @@ Alle wichtigen Kommandos auf einen Blick!
 * `git init` erstellt/reinitialisiert ein Git-Repository im aktuellen Verzeichnis [Link](https://git-scm.com/docs/git-init)
 * `git add` fügt eine Änderung aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu. Dies hat noch keine signifikanten Auswirkungen auf das Repository. (erst durch den command `git commit`) [Link](https://git-scm.com/docs/git-add)
 * `git commit -m "commit message"` speichert die Commitmessage direkt beim Committen
+* `git commit --amend` ändert einen Commit zum Beispiel, ohne seine Commitnachricht zu ändern [Link](https://git-scm.com/docs/git-commit)
 * `git revert <old commit>` hebt die Aenderung aus den altem Commit auf, indem ein gegensätzlicher Commit hinzugefügt wird [Link](https://git-scm.com/docs/git-revert)
+
 ## Log
 
 * `git log` zeigt das Commit-Log [Link](https://git-scm.com/docs/git-log)
