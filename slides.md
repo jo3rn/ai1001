@@ -180,7 +180,7 @@ Ein Beispiel Lerntagebuch:
   - Programm / Code vorstellen
   - Organisation und Arbeitsweise erläutern
   - Erkenntnisse und Gelerntes zusammenfassen
-- danach 5 Minuten Rückfragen
+- danach 10 Minuten Rückfragen
 
 ---
 
