@@ -1772,9 +1772,9 @@ Zeitpunkt: z.B. bei Merge auf Haupt-Branch
 den **Auslieferungs-Prozess** soweit wie möglich automatisieren
 ("mit Klick auf einen Button"):
 
-  - Weiterentwicklungen in eine Testumgebung bringen
-  - Releases in eine Produktivumgebung bringen
-  - User sieht nur fertig entwickelte Features
+- Weiterentwicklungen in eine Testumgebung bringen
+- Releases in eine Produktivumgebung bringen
+- User sieht nur fertig entwickelte Features
 
 ![w:100](./img/delivery.svg)
 
@@ -2787,3 +2787,148 @@ Wiederholung / Projekt
 Free and Open Source Software
 
 <!-- _footer: '[Source](http://www.modernhumorist.com/mh/0004/propaganda/mp3.php)' -->
+
+---
+
+![h:500](./img/pmpc.png)
+
+[Public Money? Public Code!](https://www.youtube.com/watch?v=_s9_rRLlmEA)
+
+---
+
+### Definition: [Open Source](https://opensource.org/osd) (1/2)
+
+1. freie Weiterverbreitung der Software
+2. frei verfügbarer Quellcode
+3. _frei modifizierbar_
+4. Integrität des Original-Quellcodes
+5. keine Diskriminierung von Personen/Gruppen
+
+---
+
+### Definition: [Open Source](https://opensource.org/osd) (2/2)
+
+6. keine Diskriminierung von Tätigkeitsbereichen
+7. keine zusätzliche Lizenz notwendig machen
+8. nicht produktspezifisch
+9. _andere Software nicht einschränken_
+10. technologieneutral
+
+---
+
+### Definition: [Free Software](https://www.gnu.org/philosophy/free-sw.en.html)
+
+Vier essentielle Freiheiten:
+
+1. Software zu jedem beliebigen Zweck ausführen können
+2. frei verfügbarer Quellcode
+3. freie Weiterverbreitung der Software
+4. freie Weiterverbreitung von Veränderungen der Software
+
+---
+
+### Open Source vs. Free Software
+
+Beispiel: Visual Studio Code ist [Open Source](https://github.com/Microsoft/vscode), aber [nicht frei](https://code.visualstudio.com/License/):
+
+> The software may collect information about you (...) You may opt-out of many of these scenarios, but not all (...)
+> You may not remove, minimize, block or modify any notices of Microsoft or its suppliers in the software (...)
+
+[Richard Stallman](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html):
+
+> Your program is very attractive, but I value my freedom more. So I reject your program. I will get my work done some other way, and support a project to develop a free replacement.
+
+---
+
+### Bekannte Lizenzen
+
+- Apache-2.0
+- BSD-2-Clause / BSD-3-Clause
+- GNU GPL-2.0 / GNU GPL-3.0
+- MIT (Expat License)
+- MPL-2.0
+
+weitere Lizenzen gelistet auf [gnu.org](https://www.gnu.org/licenses/license-list.html) und [opensource.org](https://opensource.org/licenses/alphabetical)
+
+---
+
+#### Veranstaltungs-Repository: Lizenz (1/2)
+
+**aktuell**: MIT
+
+**aber**: Repo beinhaltet auch Copyleft Material
+
+Beispiel 1: [Funktion `remove_spaces`](https://github.com/jo3rn/ai1001/blob/eda2f0becdd92a8f1e28fb9b3290917da1b42708/C/checking/checking.c#L14) kopiert von [stackoverflow](https://stackoverflow.com/a/1726321)
+Beispiel 2: [Schema aus Wikimedia](https://commons.wikimedia.org/wiki/File:DevOps_from_Integration_to_Deployment.jpg)
+
+(beide [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
+
+---
+
+#### Veranstaltungs-Repository: Lizenz (2/2)
+
+verschiedene Möglichkeiten:
+
+1. lizensiertes Material entfernen
+1. Lizenz ändern (Kompatibilität beachten, z.B. [CC BY-SA 4.0](https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses/), [GPL](https://www.gnu.org/licenses/license-list.de.html))
+1. mehrere Lizenzen verwenden
+1. nichts tun
+
+---
+
+#### Negativbeispiel Luca App
+
+30.03.2021: [Eingeschränkte Lizenz](https://gitlab.com/lucaapp/android/-/commit/f03c6024bf87a773d6c299b1622d76136e73e0ec)
+
+Backlash der Software Community, siehe z.B. [zerforschung](https://zerforschung.org/posts/luca-2/), [netzpolitik.org](https://netzpolitik.org/2021/mfg-gpl-die-fantastische-lizenz-der-luca-app/)
+
+31.03.2021: [Aktualisierte Lizenz](https://gitlab.com/lucaapp/android/-/commit/488a48fe0c23bff5f91d8c74fe1104bf21fbac73)
+
+---
+
+![bg left 75%](./img/dependency.png)
+
+Beispiele:
+
+- [curl](https://github.com/curl/curl)
+- [GPG](https://gnupg.org/donate/kudos.html)
+- [PyPi](https://github.com/pypa/warehouse)
+- [log4j](https://github.com/apache/logging-log4j2)
+- [Ariadne Conill](https://twitter.com/ariadneconill/status/1445632043514155014)
+
+<!-- _footer: '[Source](https://xkcd.com/2347/)' -->
+
+---
+
+### Was schief gehen kann
+
+1.  [package nicht mehr verfügbar](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm.html) ([left-pad](https://www.npmjs.com/package/left-pad))
+
+2.  [package (absichtlich) kompromittiert](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/) ([colors.js](https://github.com/Marak/colors.js/issues/285))
+    ![Screenshot of bugged colors.js output](./img/colors_liberty.png)
+
+---
+
+### Was tun bei Sicherheitslücken
+
+Meldung der Schwachstelle...
+
+- **Private Disclosure**
+  ... nur an Hersteller
+- **Responsible Disclosure**
+  ... zunächst an Hersteller, zeitversetzt an die Öffentlichkeit
+- **Full Disclosure**
+  ... zeitgleich an Hersteller und Öffentlichkeit
+
+---
+
+### Open Data
+
+öffentlich verfügbare Daten unter offenen Lizenzen
+
+> Das Ziel ist daher der Aufbau eines Daten-Ökosystems, in dem Wirtschaft, Verwaltung und Zivilgesellschaft gegenseitig von einer guten Datenbasis und breiten Nutzungsmöglichkeiten profitieren können.
+> [BMI](https://www.bmi.bund.de/DE/themen/moderne-verwaltung/open-government/open-data/open-data-node.html)
+
+Beispiele: [OpenStreetMap](https://www.openstreetmap.de/), [Open Food Facts](https://de.openfoodfacts.org/data), [World Health Organization](https://www.who.int/data/gho/), [Deutsche Bahn](https://data.deutschebahn.com/)
+
+weitere entdecken z.B. via [Google Dataset](https://datasetsearch.research.google.com/) oder [Open Data Monitor](https://opendatamonitor.eu/)
