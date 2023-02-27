@@ -2835,13 +2835,15 @@ Vier essentielle Freiheiten:
   - freie Software: Freiheiten der Benutzer verteidigen
   - Open Source: praktische Vorteile
 
-Die Open Source und Free Software Definitionen sind fast deckungsgleich, sodass Open Source Lizenzen und Programme in der Regel auch freie Software sind und umgekehrt.
+---
 
-Hinter den beiden Definitionen stehen jedoch sehr unterschiedliche Philosophien und Motivationen: Während freie Software das Ziel hat die Freiheiten der Benutzer zu verteidigen fokussiert sich die Open Source Bewegung auf die praktischen Vorteile, welche sich durch uneingeschränkte Zusammenarbeit ergeben können.
+### Open Source vs. Free Software (2/2)
 
-Der Begriff _Free and Open Source Software (FOSS)_ hat den Anspruch beide Bewegungen zusammenzufassen und gleichzeitig politisch eher neutral zu sein.
+[Richard Stallman](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html) über proprietäre Software:
 
-Quelle: [opensource.com](https://opensource.com/article/17/11/open-source-or-free-software)
+> A pure _open source enthusiast_ (...) will say, "I am surprised you were able to make the program work so well without using our development model, but you did. **How can I get a copy?**"
+
+> The _free software activist_ will say, "Your program is very attractive, but I value my freedom more. So I reject your program. I will get my work done some other way, and support a project to **develop a free replacement**."
 
 ---
 
