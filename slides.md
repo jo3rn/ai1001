@@ -2827,7 +2827,13 @@ Vier essentielle Freiheiten:
 
 ---
 
-### Open Source vs. Free Software
+### Open Source vs. Free Software (1/2)
+
+- Definitionen sind fast deckungsgleich
+
+- unterschiedliche Philosophie und Motivation:
+  - freie Software: Freiheiten der Benutzer verteidigen
+  - Open Source: praktische Vorteile
 
 Die Open Source und Free Software Definitionen sind fast deckungsgleich, sodass Open Source Lizenzen und Programme in der Regel auch freie Software sind und umgekehrt.
 
